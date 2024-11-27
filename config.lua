@@ -168,7 +168,7 @@ transcendanceAvatarDuration = 7000
 -- NOTE: bosstiaryKillMultiplier, multiplier value of boss killed, default 1
 bestiaryKillMultiplier = 3
 bosstiaryKillMultiplier = 3
-bestiaryRateCharmShopPrice  = 1.0
+bestiaryRateCharmShopPrice = 1.0
 boostedBossSlot = true
 boostedBossLootBonus = 250
 boostedBossKillBonus = 3
@@ -406,7 +406,7 @@ passwordType = "sha1"
 --In general, a higher level of parallelism can make the algorithm faster on systems with multiple CPU cores, but it can also increase memory usage.
 -- NOTE: These settings have to be the same on the site and server.
 memoryConst = "1<<16"
-temporaryConst= 2
+temporaryConst = 2
 parallelism = 2
 
 -- Session Auth
