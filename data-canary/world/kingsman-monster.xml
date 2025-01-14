@@ -13556,7 +13556,6 @@
 		<monster name="Animated Feather" x="-1" y="1" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="914" centery="1312" centerz="10" radius="3">
-		<monster name="Flying Book" x="-3" y="-3" z="10" spawntime="60" />
 		<monster name="Animated Feather" x="1" y="-3" z="10" spawntime="60" />
 		<monster name="Ink Blob" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="Icecold Book" x="2" y="2" z="10" spawntime="60" />
@@ -13566,7 +13565,6 @@
 		<monster name="Animated Feather" x="-1" y="1" z="10" spawntime="60" />
 	</monster>
 	<monster centerx="841" centery="1314" centerz="10" radius="3">
-		<monster name="Flying Book" x="-3" y="-3" z="10" spawntime="60" />
 		<monster name="Animated Feather" x="1" y="-3" z="10" spawntime="60" />
 		<monster name="Ink Blob" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="Icecold Book" x="2" y="2" z="10" spawntime="60" />
