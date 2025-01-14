@@ -1,6 +1,6 @@
 -- Custom Modules, created to help us in this datapack
 local travelDiscounts = {
-	["postman"] = { price = 10, storage = Storage.Quest.ExampleQuest, value = 1 },
+
 }
 
 function StdModule.travelDiscount(npc, player, discounts)

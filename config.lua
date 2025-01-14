@@ -36,13 +36,13 @@ removeWeaponCharges = true
 removeBeginningWeaponAmmunition = false
 refundBeginningWeaponMana = false
 timeToDecreaseFrags = 12 * 60 * 60 * 1000
-whiteSkullTime = 5 * 60 * 1000
+whiteSkullTime = 3 * 60 * 1000
 stairJumpExhaustion = 1 * 1000
 experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
-dayKillsToRedSkull = 6
-weekKillsToRedSkull = 30
-monthKillsToRedSkull = 100
+dayKillsToRedSkull = 10
+weekKillsToRedSkull = 70
+monthKillsToRedSkull = 300
 redSkullDuration = 1
 blackSkullDuration = 3
 orangeSkullDuration = 2
@@ -61,13 +61,11 @@ loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-serverName = "King OT"
+serverName = "Kingsman OT"
 serverMotd = "Bem-vindo!"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
-maxItem = 2000
-maxContainer = 100
 maxPlayersOnlinePerAccount = 1
 maxPlayersOutsidePZPerAccount = 1
 
@@ -80,6 +78,9 @@ packetCompressionLevel = 6
 freeDepotLimit = 2000
 premiumDepotLimit = 10000
 depotBoxes = 20
+maxItem = 2000
+maxContainer = 200
+maxContainerDepth = 200
 
 -- Augments System (Get more info in: https://github.com/opentibiabr/canary/pull/2602)
 -- NOTE: the following values are for all weapons and equipments that have type of "increase damage", "powerful impact" and "strong impact".
@@ -114,7 +115,7 @@ taskHuntingSystemEnabled = false
 taskHuntingFreeThirdSlot = false
 taskHuntingLimitedTasksExhaust = 20 * 60 * 60
 taskHuntingRerollPricePerLevel = 200
-taskHuntingSelectListPrice = 5
+taskHuntingSelectListPrice = 2
 taskHuntingBonusRerollPrice = 1
 taskHuntingFreeRerollTime = 20 * 60 * 60
 
@@ -129,14 +130,14 @@ forgeMaxItemTier = 10
 forgeCostOneSliver = 20
 forgeSliverAmount = 3
 forgeCoreCost = 50
-forgeMaxDust = 225
-forgeFusionDustCost = 100
-forgeConvergenceFusionDustCost = 130
-forgeTransferDustCost = 100
-forgeConvergenceTransferCost = 160
-forgeBaseSuccessRate = 50
+forgeMaxDust = 600
+forgeFusionDustCost = 50
+forgeConvergenceFusionDustCost = 65
+forgeTransferDustCost = 50
+forgeConvergenceTransferCost = 65
+forgeBaseSuccessRate = 60
 forgeBonusSuccessRate = 25
-forgeTierLossReduction = 50
+forgeTierLossReduction = 40
 forgeAmountMultiplier = 3
 forgeMinSlivers = 3
 forgeMaxSlivers = 7
@@ -256,7 +257,7 @@ onlyPremiumAccount = false
 -- NOTE: if showLootsInBestiary is true, will cause all loots to be shown in the bestiary even if the player has not reached the required number of kills
 -- NOTE: minTownIdToBankTransfer blocks towns less than defined from receiving money transfers
 -- NOTE: enableSupportOutfit enable GODS and GMS to select support outfit (gamemaster, customer support or community manager)
-stashMoving = false
+stashMoving = true
 stashItemCount = 5000
 depotChest = 4
 autoLoot = true
@@ -273,9 +274,9 @@ randomMonsterSpawn = false
 lootPouchMaxLimit = 2000
 storeInboxMaxLimit = 2000
 enablePlayerPutItemInAmmoSlot = false
-startStreakLevel = 0
-showLootsInBestiary = true
-minTownIdToBankTransfer = 3
+startStreakLevel = 7
+showLootsInBestiary = false
+minTownIdToBankTransfer = 1
 enableSupportOutfit = true
 
 -- Teleport summon
@@ -285,17 +286,17 @@ teleportSummons = false
 -- NOTE: true will allow the /reload command to be used
 -- NOTE: Using this script might cause unwanted changes
 -- This script forces a reload in the entire server, this means that everything that is stored in memory might stop to work properly and/or completely, this script should be used in test environments only
-allowReload = false
+allowReload = true
 
 -- Stamina in Trainers
 staminaTrainer = true
 staminaTrainerDelay = 1
-staminaTrainerGain = 5
+staminaTrainerGain = 1
 -- Stamina in PZ
 staminaPz = true
 staminaOrangeDelay = 1
 staminaGreenDelay = 1
-staminaPzGain = 5
+staminaPzGain = 1
 -- Max players allowed on a dummy.
 maxAllowedOnADummy = 5
 
@@ -368,7 +369,7 @@ pushWhenAttacking = false
 -- Note: If a map with the same name already exists in the world folder, the map will not be downloaded, even if toggleDownloadMap is set to true.
 toggleDownloadMap = false
 mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.1.0/otservbr.otbm"
-mapName = "kingot"
+mapName = "kingsman"
 mapAuthor = "OpenTibiaBR"
 
 -- Party List limitations
@@ -393,7 +394,7 @@ maxMarketOffersAtATimePerPlayer = 100
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
 mysqlPass = "13john13"
-mysqlDatabase = "kingot"
+mysqlDatabase = "kingsman"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"
@@ -536,7 +537,7 @@ defaultPriority = "high"
 startupDatabaseOptimization = true
 
 -- Status server information
-ownerName = "King OT"
+ownerName = "Kingsman OT"
 ownerEmail = ""
 url = ""
 location = "South America"

@@ -26,10 +26,10 @@ Storage = {
 		Key = {
 			ID1000 = 103,
 		},
-		ExampleQuest = {
-			Example = 9000,
-			Door = 9001,
-		},
+		Yalahar = {
+			LastFight = 9000,
+			Reward = 9001,
+		}
 	},
 
 	DelayLargeSeaShell = 30002,
