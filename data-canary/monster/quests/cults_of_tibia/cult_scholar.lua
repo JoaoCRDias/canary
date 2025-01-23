@@ -14,7 +14,6 @@ monster.outfit = {
 }
 
 monster.events = {
-
 }
 
 monster.raceId = 1514

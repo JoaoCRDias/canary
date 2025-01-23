@@ -308,11 +308,11 @@ namespace {
 	}
 
 	std::vector<PromotionScroll> WheelOfDestinyPromotionScrolls = {
-		{ 43946, "abridged", 3 },
-		{ 43947, "basic", 5 },
-		{ 43948, "revised", 9 },
-		{ 43949, "extended", 13 },
-		{ 43950, "advanced", 20 },
+		{ 43946, "abridged", 20 },
+		{ 43947, "basic", 40 },
+		{ 43948, "revised", 60 },
+		{ 43949, "extended", 80 },
+		{ 43950, "advanced", 100 },
 	};
 } // namespace
 

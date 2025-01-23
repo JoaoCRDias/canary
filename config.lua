@@ -9,7 +9,8 @@ coreDirectory = "data"
 
 -- Set log level
 -- It can be trace, debug, info, warning, error, critical, off (default: info).
--- NOTE: Will only display logs with level higher or equal the one set.
+-- NOTE: It will only be valid after the server starts up and only display logs with level higher or equal the one set.
+-- NOTE: Debug and trace logs are only available if compiled in debug mode.
 logLevel = "debug"
 
 --- Toggles the server's maintenance mode.
@@ -19,7 +20,7 @@ toggleMaintainMode = false
 --- Message displayed during maintenance mode.
 -- Should inform the expected downtime or resumption details succinctly.
 -- @field [parent=#global] #string maintainModeMessage an empty string by default, set a custom message if needed.
-maintainModeMessage = "Server em manutenção, acompanhe as novidades pelo nosso discord."
+maintainModeMessage = "Server em manutenção, acompanhe pelo nosso discord!"
 
 -- Combat settings
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
@@ -35,17 +36,18 @@ removeWeaponAmmunition = false
 removeWeaponCharges = true
 removeBeginningWeaponAmmunition = false
 refundBeginningWeaponMana = false
-timeToDecreaseFrags = 12 * 60 * 60 * 1000
-whiteSkullTime = 3 * 60 * 1000
+timeToDecreaseFrags = 24 * 60 * 60 * 1000
+whiteSkullTime = 5 * 60 * 1000
 stairJumpExhaustion = 1 * 1000
 experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
 dayKillsToRedSkull = 10
-weekKillsToRedSkull = 70
-monthKillsToRedSkull = 300
+weekKillsToRedSkull = 50
+monthKillsToRedSkull = 150
 redSkullDuration = 1
 blackSkullDuration = 3
-orangeSkullDuration = 2
+orangeSkullDuration = 7
+loginProtectionTime = 5 * 1000
 
 cleanProtectionZones = false
 
@@ -61,8 +63,8 @@ loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-serverName = "Kingsman OT"
-serverMotd = "Bem-vindo!"
+serverName = "Baiak Turbo"
+serverMotd = "Bem vindo ao Baiak Turbo"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
@@ -102,10 +104,10 @@ augmentStrongImpactPercent = 10
 preySystemEnabled = true
 preyFreeThirdSlot = false
 preyRerollPricePerLevel = 200
-preySelectListPrice = 2
+preySelectListPrice = 3
 preyBonusRerollPrice = 1
-preyBonusTime = 3 * 60 * 60
-preyFreeRerollTime = 10 * 60 * 60
+preyBonusTime = 2 * 60 * 60
+preyFreeRerollTime = 20 * 60 * 60
 
 -- Task hunting system
 -- NOTE: taskHuntingLimitedTasksExhaust: Time to wait to select a new creature on the task hunting slot after claiming the reward.
@@ -115,7 +117,7 @@ taskHuntingSystemEnabled = false
 taskHuntingFreeThirdSlot = false
 taskHuntingLimitedTasksExhaust = 20 * 60 * 60
 taskHuntingRerollPricePerLevel = 200
-taskHuntingSelectListPrice = 2
+taskHuntingSelectListPrice = 3
 taskHuntingBonusRerollPrice = 1
 taskHuntingFreeRerollTime = 20 * 60 * 60
 
@@ -131,20 +133,20 @@ forgeCostOneSliver = 20
 forgeSliverAmount = 3
 forgeCoreCost = 50
 forgeMaxDust = 600
-forgeFusionDustCost = 50
-forgeConvergenceFusionDustCost = 65
-forgeTransferDustCost = 50
-forgeConvergenceTransferCost = 65
+forgeFusionDustCost = 100
+forgeConvergenceFusionDustCost = 130
+forgeTransferDustCost = 100
+forgeConvergenceTransferCost = 160
 forgeBaseSuccessRate = 60
-forgeBonusSuccessRate = 25
+forgeBonusSuccessRate = 15
 forgeTierLossReduction = 40
 forgeAmountMultiplier = 3
 forgeMinSlivers = 3
 forgeMaxSlivers = 7
 forgeInfluencedLimit = 900
-forgeFiendishLimit = 20
+forgeFiendishLimit = 50
 forgeFiendishIntervalType = "minute"
-forgeFiendishIntervalTime = "10"
+forgeFiendishIntervalTime = "30"
 
 ruseChanceFormulaA = 0.0307576
 ruseChanceFormulaB = 0.440697
@@ -167,9 +169,9 @@ transcendanceAvatarDuration = 7000
 -- Bestiary & Bosstiary system
 -- NOTE: bestiaryKillMultiplier, multiplier value of monster killed, default 1
 -- NOTE: bosstiaryKillMultiplier, multiplier value of boss killed, default 1
-bestiaryKillMultiplier = 3
-bosstiaryKillMultiplier = 3
-bestiaryRateCharmShopPrice = 1.0
+bestiaryKillMultiplier = 2
+bosstiaryKillMultiplier = 2
+bestiaryRateCharmShopPrice  = 1.0
 boostedBossSlot = true
 boostedBossLootBonus = 250
 boostedBossKillBonus = 3
@@ -255,7 +257,7 @@ onlyPremiumAccount = false
 -- NOTE: enablePlayerPutItemInAmmoSlot = true, will enable players to put any items on ammo slot, more used in custom shopping system
 -- NOTE: startStreakLevel will make a reward streak level for new players who never logged in
 -- NOTE: if showLootsInBestiary is true, will cause all loots to be shown in the bestiary even if the player has not reached the required number of kills
--- NOTE: minTownIdToBankTransfer blocks towns less than defined from receiving money transfers
+-- NOTE: minTownIdToBankTransferFromMain blocks towns less than defined from receiving money transfers
 -- NOTE: enableSupportOutfit enable GODS and GMS to select support outfit (gamemaster, customer support or community manager)
 stashMoving = true
 stashItemCount = 5000
@@ -276,7 +278,7 @@ storeInboxMaxLimit = 2000
 enablePlayerPutItemInAmmoSlot = false
 startStreakLevel = 7
 showLootsInBestiary = false
-minTownIdToBankTransfer = 1
+minTownIdToBankTransferFromMain = 1
 enableSupportOutfit = true
 
 -- Teleport summon
@@ -290,15 +292,15 @@ allowReload = true
 
 -- Stamina in Trainers
 staminaTrainer = true
-staminaTrainerDelay = 1
+staminaTrainerDelay = 2
 staminaTrainerGain = 1
 -- Stamina in PZ
 staminaPz = true
 staminaOrangeDelay = 1
-staminaGreenDelay = 1
+staminaGreenDelay = 2
 staminaPzGain = 1
 -- Max players allowed on a dummy.
-maxAllowedOnADummy = 5
+maxAllowedOnADummy = 6
 
 -- Save interval per time
 -- NOTE: toggleSaveInterval: true = enable the save interval, false = disable the save interval
@@ -340,9 +342,11 @@ Setting this to false may pose risks; if a house is abandoned and contains a lar
 ]]
 -- Periods: daily/weekly/monthly/yearly/never
 -- Base: sqm,rent,sqm+rent
+toggleCyclopediaHouseAuction = false
+daysToCloseBid = 1
 housePriceRentMultiplier = 0.0
 housePriceEachSQM = 1000
-houseRentPeriod = "never"
+houseRentPeriod = "weekly"
 houseRentRate = 1.0
 houseOwnedByAccount = false
 houseBuyLevel = 100
@@ -370,7 +374,7 @@ pushWhenAttacking = false
 toggleDownloadMap = false
 mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.1.0/otservbr.otbm"
 mapName = "kingsman"
-mapAuthor = "OpenTibiaBR"
+mapAuthor = "ADM Kolisium"
 
 -- Party List limitations
 -- max distance in which players in party list are visible
@@ -384,8 +388,8 @@ toggleMapCustom = false
 -- Market
 -- NOTE: marketRefreshPricesInterval (in minutes, minimum is 1 minute)
 -- NOTE: set it to 0 for disable, is the time in which the task will run updating the prices of the items that will be sent to the client
-marketOfferDuration = 30 * 24 * 60 * 60
-marketRefreshPricesInterval = 30
+marketOfferDuration = 7 * 24 * 60 * 60
+marketRefreshPricesInterval = 10
 premiumToCreateMarketOffer = true
 checkExpiredMarketOffersEachMinutes = 60
 maxMarketOffersAtATimePerPlayer = 100
@@ -395,6 +399,7 @@ mysqlHost = "127.0.0.1"
 mysqlUser = "root"
 mysqlPass = "13john13"
 mysqlDatabase = "kingsman"
+mysqlDatabaseBackup = false
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"
@@ -422,7 +427,7 @@ toggleMountInProtectionZone = true
 freePremium = true
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
-emoteSpells = false
+emoteSpells = true
 allowWalkthrough = true
 coinPacketSize = 25
 coinImagesURL = "http://127.0.0.1/images/store/"
@@ -440,8 +445,8 @@ experienceDisplayRates = true
 -- multiplierSpeedOnFist * 5  (multiplies the value obtained from the player fist skill and multiplies it * 5) max 25 is recommended due minTicks limits else player stop attack
 -- maxSpeedOnFist 500 miliseconds  (The maximum attack speed that can be obtained no matter how high the player has the Fist Fighting skill.)
 toggleAttackSpeedOnFist = true
-multiplierSpeedOnFist = 5
-maxSpeedOnFist = 250
+multiplierSpeedOnFist = 2
+maxSpeedOnFist = 500
 disableLegacyRaids = false
 disableMonsterArmor = false
 minElementalResistance = -200
@@ -464,29 +469,29 @@ globalServerSaveNotifyDuration = 5
 globalServerSaveCleanMap = false
 globalServerSaveClose = false
 globalServerSaveShutdown = true
-globalServerSaveTime = "09:00:00"
+globalServerSaveTime = "08:00:00"
 
 -- Sort loot by chance, most rare items drop first
 -- it is good to be setted when you have a higher
 -- rateLoot to avoid losing all rare items when
 -- the corpse size is less than the total of loots
 -- the monster can drop
-sortLootByChance = true
+sortLootByChance = false
 
 -- Rates
 -- NOTE: rateExp, rateSkill and rateMagic is used when 'rateUseStages = false' - or a fallback only
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
 rateUseStages = true
-lowLevelBonusExp = 100
+lowLevelBonusExp = 50
 rateExp = 1
-rateSkill = 10
-rateLoot = 3
-rateMagic = 10
-rateSpawn = 10
+rateSkill = 1
+rateLoot = 1
+rateMagic = 1
+rateSpawn = 1
 
 -- Killing in the name of Quest
-rateKillingInTheNameOfPoints = 3
+rateKillingInTheNameOfPoints = 1
 
 -- Today regeneration condition over an loop every 1 second,
 -- So values which should regenerated less then 1 second or won't will work
@@ -515,11 +520,11 @@ rateBossHealth = 1.0
 rateBossAttack = 1.0
 rateBossDefense = 1.0
 
-bossDefaultTimeToFightAgain = 10 * 60 * 60 -- 20 hours
+bossDefaultTimeToFightAgain = 20 * 60 * 60 -- 20 hours
 bossDefaultTimeToDefeat = 20 * 60 -- 20 minutes
 
 -- Monsters
-defaultRespawnTime = 30
+defaultRespawnTime = 60
 deSpawnRange = 2
 deSpawnRadius = 50
 
@@ -537,7 +542,7 @@ defaultPriority = "high"
 startupDatabaseOptimization = true
 
 -- Status server information
-ownerName = "Kingsman OT"
+ownerName = "ADM Kolisium"
 ownerEmail = ""
 url = ""
 location = "South America"
@@ -564,12 +569,12 @@ discordWebhookDelayMs = 1000
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
 vipSystemEnabled = true
 vipBonusExp = 10
-vipBonusLoot = 15
+vipBonusLoot = 5
 vipBonusSkill = 10
 vipAutoLootVipOnly = false
 vipStayOnline = true
 vipFamiliarTimeCooldownReduction = 0
-vipKeepHouse = true
+vipKeepHouse = false
 
 -- NOTE: set rewardChestCollectEnabled to true to enable the reward collect system
 -- NOTE set rewardChestMaxCollectItems max items per collect action

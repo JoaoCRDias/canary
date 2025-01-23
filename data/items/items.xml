@@ -76266,6 +76266,21 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="trophies"/>
 		<attribute key="weight" value="500"/>
 	</item>
+	<item id="43946" article="a" name="abridged promotion scroll">
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="43947" article="a" name="basic promotion scroll">
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="43948" article="a" name="revised promotion scroll">
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="43949" article="a" name="extended promotion scroll">
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="43950" article="a" name="advanced promotion scroll">
+		<attribute key="weight" value="30"/>
+	</item>
 	<item id="44036" article="a" name="dead ayana the crimson curse">
 		<attribute key="decayTo" value="0"/>
 		<attribute key="duration" value="60"/>
@@ -80126,6 +80141,302 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="soul cores"/>
 		<attribute key="description" value="Offers a soul to the Soulpit. Combine with an exalted core to turn it into a lesser soul core."/>
 		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49279" article="a" name="skull of renegades trinket">
+		<attribute key="weight" value="100"/>
+		<attribute key="manaleechamount" value="1000"/>
+		<attribute key="manaleechchance" value="100"/>
+		<attribute key="lifeleechamount" value="1000"/>
+		<attribute key="lifeleechchance" value="100"/>
+		<attribute key="absorbpercentlifedrain" value="20"/>
+		<attribute key="absorbpercentmanadrain" value="20"/>
+		<attribute key="reflectdamage" value="10"/>
+		<attribute key="absorbpercentphysical" value="4"/>
+		<attribute key="absorbpercentfire" value="4"/>
+		<attribute key="absorbpercentpoison" value="4"/>
+		<attribute key="absorbpercentenergy" value="4"/>
+		<attribute key="absorbpercentice" value="4"/>
+		<attribute key="absorbpercentholy" value="4"/>
+		<attribute key="absorbpercentdeath" value="4"/>
+		<attribute key="criticalhitdamage" value="2000"/>
+		<attribute key="criticalhitchance" value="1000"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+			<attribute key="skillboost club" value="3"/>
+			<attribute key="skillboost shielding" value="3"/>
+			<attribute key="skillboost distance" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+	</item>
+	<item id="49280" article="a" name="rune refiller">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49281" article="a" name="addon chest">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49282" article="a" name="mount chest">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49283" article="a" name="book of blessings">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49284" article="a" name="ot backpack">
+		<attribute key="containersize" value="28"/>
+		<attribute key="weight" value="1500"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="20"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="20"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase capacity" value="3"/>
+			<attribute key="elemental protection death" value="1"/>
+			<attribute key="elemental protection earth" value="1"/>
+			<attribute key="elemental protection fire" value="1"/>
+			<attribute key="elemental protection ice" value="1"/>
+			<attribute key="elemental protection energy" value="1"/>
+			<attribute key="elemental protection holy" value="1"/>
+		</attribute>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="backpack"/>
+		</attribute>
+	</item>
+	<item id="49285" article="a" name="portable shrine">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49286" article="a" name="soul coin">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="weight" value="10"/>
+	</item>
+	<item id="49287" article="a" name="skull remover potion">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49288" article="a" name="tier remover">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49289" article="a" name="flask of liquid dust">
+	<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="Drinking this potion fills up all your dust limit"/>
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49290" article="a" name="exchange token">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="49291" article="a" name="task token">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="60436" article="a" name="stamina refiller">
+		<attribute key="primarytype" value="liquids"/>
+		<attribute key="description" value="Drinking this potion fills up all stamina"/>
+		<attribute key="weight" value="210"/>
+	</item>
+	<item id="60454" article="a" name="turbo necklace">
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="skillclub" value="2"/>
+		<attribute key="skillaxe" value="2"/>
+		<attribute key="skillsword" value="2"/>
+		<attribute key="skilldist" value="2"/>
+		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="20"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="20"/>
+		<attribute key="weight" value="500"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="necklace"/>
+		</attribute>
+	</item>
+	<item id="49303" article="a" name="turbo ring">
+		<attribute key="showAttributes" value="1"/>
+		<attribute key="manaticks" value="2000"/>
+		<attribute key="managain" value="20"/>
+		<attribute key="healthticks" value="2000"/>
+		<attribute key="healthgain" value="20"/>
+		<attribute key="absorbpercentphysical" value="4"/>
+		<attribute key="absorbpercentfire" value="4"/>
+		<attribute key="absorbpercentpoison" value="4"/>
+		<attribute key="absorbpercentenergy" value="4"/>
+		<attribute key="absorbpercentice" value="4"/>
+		<attribute key="absorbpercentholy" value="4"/>
+		<attribute key="absorbpercentdeath" value="4"/>
+		<attribute key="weight" value="500"/>
+		<attribute key="script" value="moveevent">
+			<attribute key="slot" value="ring"/>
+		</attribute>
+	</item>
+	<item id="49295" article="a" name="diabolic dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49296"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="130"/>
+		</attribute>
+	</item>
+	<item id="49296" article="a" name="diabolic dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49295"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="130"/>
+		</attribute>
+	</item>
+	<item id="49297" article="a" name="king dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49298"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="130"/>
+		</attribute>
+	</item>
+	<item id="49298" article="a" name="king dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49297"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="130"/>
+		</attribute>
+	</item>
+	<item id="49299" article="a" name="arthas dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49300"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="130"/>
+		</attribute>
+	</item>
+	<item id="49300" article="a" name="arthas dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49299"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="130"/>
+		</attribute>
+	</item>
+	<item id="49301" article="a" name="ferumbras scarecrow dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49302"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="150"/>
+		</attribute>
+	</item>
+	<item id="49302" article="a" name="ferumbras scarecrow dummy">
+		<attribute key="primarytype" value="furniture"/>
+		<attribute key="description" value="You can train your skills by using training weapons with this expert exercise dummy"/>
+		<attribute key="wrapableto" value="23398"/>
+		<attribute key="rotateto" value="49301"/>
+		<attribute key="type" value="dummy">
+			<attribute key="rate" value="150"/>
+		</attribute>
+	</item>
+	<item id="60481" article="a" name="amulet pouch">
+		<attribute key="description" value="A infinity bag where you can hold amulets."/>
+		<attribute key="containersize" value="20"/>
+	</item>
+	<item id="60480" article="a" name="ring pouch">
+		<attribute key="description" value="A infinity bag where you can hold rings."/>
+		<attribute key="containersize" value="20"/>
+	</item>
+	<item id="60437" article="a" name="loot seller">
+		<attribute key="description" value="Sell all your loot inside loot pouch with one click"/>
+	</item>
+	<item id="61963" article="a" name="cassino teleport">
+		<attribute key="primarytype" value="teleporters"/>
+		<attribute key="type" value="teleport"/>
+		<attribute key="description" value="You can see the other side through it."/>
+		<attribute key="effect" value="teleport"/>
+	</item>
+	<item fromid="61964" toid="2017" article="a" name="roulette sign">
+		<attribute key="primarytype" value="signs"/>
+		<attribute key="allowDistRead" value="1"/>
+	</item>
+	<item id="61954" article="a" name="remains">
+		<attribute key="duration" value="30"/>
+		<attribute key="decayTo" value="61955"/>
+		<attribute key="weight" value="120000"/>
+	</item>
+	<item id="61955" article="a" name="remains">
+		<attribute key="duration" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="weight" value="120000"/>
+	</item>
+	<item id="61949" article="a" name="remains">
+		<attribute key="duration" value="30"/>
+		<attribute key="decayTo" value="61948"/>
+		<attribute key="weight" value="120000"/>
+	</item>
+	<item id="61948" article="a" name="remains">
+		<attribute key="duration" value="30"/>
+		<attribute key="decayTo" value="0"/>
+		<attribute key="weight" value="120000"/>
+	</item>
+	<item id="61896" article="a" name="roulette token">
+		<attribute key="primarytype" value="game tokens"/>
+		<attribute key="weight" value="120000"/>
+	</item>
+	<item id="61868" article="a" name="scroll of prey wildcard">
+		<attribute key="weight" value="1000"/>
+	</item>
+	<item id="61812" article="a" name="loot pouch">
+		<attribute key="description" value="A infinity bag where you can hold loot."/>
+		<attribute key="containersize" value="20"/>
+	</item>
+	<item id="61761" article="a" name="holy symbol" />
+	<item id="61762" article="a" name="holy symbol" />
+	<item id="61718" article="a" name="surprise bag">
+		<attribute key="description" value="Get a random item. Good luck."/>
+	</item>
+	<item id="61707" article="a" name="knight's chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+		<attribute key="rotateto" value="61708"/>
+		<attribute key="weight" value="12000"/>
+	</item>
+	<item id="61708" article="a" name="knight's chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+		<attribute key="rotateto" value="61707"/>
+		<attribute key="weight" value="12000"/>
+	</item>
+	<item id="61709" article="a" name="mage's chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+		<attribute key="rotateto" value="61710"/>
+		<attribute key="weight" value="12000"/>
+	</item>
+	<item id="61710" article="a" name="mage's chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+		<attribute key="rotateto" value="61709"/>
+		<attribute key="weight" value="12000"/>
+	</item>
+	<item id="61711" article="a" name="paladin's chest">
+		<attribute key="primarytype" value="containers"/>
+		<attribute key="containersize" value="15"/>
+		<attribute key="rotateto" value="61712"/>
+		<attribute key="weight" value="12000"/>
+	</item>
+	<item id="61685" article="a" name="castle token">
+		<attribute key="weight" value="100"/>
+	</item>
+	<item id="61672" article="a" name="infinite food" plural="infinite foods">
+		<attribute key="primarytype" value="food"/>
+		<attribute key="weight" value="20"/>
 	</item>
 </items>
 

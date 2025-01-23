@@ -120,6 +120,7 @@ local foods = {
 	[37531] = { 5, "Mmmm." }, -- candy floss
 	[37532] = { 15, "Mmmm." }, -- ice cream cone
 	[37533] = { 60, "Mmmm." }, -- birthday layer cake
+	[61672] = { 22, "Delicious" }, -- brown mushroom
 }
 
 local food = Action()
@@ -140,7 +141,9 @@ function food.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	player:say(itemFood[2], TALKTYPE_MONSTER_SAY)
 	player:updateSupplyTracker(item)
 	player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_EAT, player:isInGhostMode() and nil or player)
-	item:remove(1)
+	if(item.itemid ~= 61672) then
+		item:remove(1)
+	end
 	return true
 end
 

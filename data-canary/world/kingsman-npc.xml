@@ -1,40 +1,13 @@
 <?xml version="1.0"?>
 <npcs>
-	<npc centerx="1507" centery="914" centerz="5" radius="1">
-		<npc name="Eruaran" x="0" y="0" z="5" spawntime="60" />
-	</npc>
-	<npc centerx="1425" centery="1045" centerz="5" radius="1">
-		<npc name="Mortis" x="0" y="0" z="5" spawntime="60" />
-	</npc>
-	<npc centerx="1517" centery="886" centerz="6" radius="1">
-		<npc name="Morax" x="0" y="0" z="6" spawntime="60" />
-	</npc>
-	<npc centerx="1605" centery="918" centerz="6" radius="1">
-		<npc name="Dream Butterfly" x="0" y="0" z="6" spawntime="60" />
-	</npc>
-	<npc centerx="1431" centery="925" centerz="7" radius="1">
-		<npc name="Asnarus" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1415" centery="927" centerz="7" radius="1">
-		<npc name="Auron" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1448" centery="930" centerz="7" radius="1">
-		<npc name="Siestaar" x="0" y="0" z="7" spawntime="60" />
-	</npc>
 	<npc centerx="962" centery="989" centerz="7" radius="1">
 		<npc name="Loot Buyer" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="963" centery="993" centerz="7" radius="1">
-		<npc name="Banker" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="978" centery="998" centerz="7" radius="1">
 		<npc name="Dark Rodo" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="1000" centery="1000" centerz="7" radius="1">
+	<npc centerx="1000" centery="1002" centerz="7" radius="1">
 		<npc name="Sigfried" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1386" centery="1091" centerz="7" radius="1">
-		<npc name="Gederas" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="1020" centery="998" centerz="8" radius="1">
 		<npc name="Loot Buyer" x="0" y="0" z="8" spawntime="60" />

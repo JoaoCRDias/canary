@@ -190,7 +190,6 @@ npcConfig.shop = {
 	{ itemName = "energy soil", clientId = 945, sell = 2000 },
 	{ itemName = "eternal flames", clientId = 946, sell = 5000 },
 	{ itemName = "flawless ice crystal", clientId = 942, sell = 5000 },
-	{ itemName = "glimmering soil", clientId = 941, sell = 2000 },
 	{ itemName = "iced soil", clientId = 944, sell = 2000 },
 	{ itemName = "mother soil", clientId = 947, sell = 5000 },
 	{ itemName = "natural soil", clientId = 940, sell = 2000 },

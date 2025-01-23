@@ -11,12 +11,12 @@ npcConfig.walkInterval = 2000
 npcConfig.walkRadius = 2
 
 npcConfig.outfit = {
-	lookType = 128,
-	lookHead = 58,
-	lookBody = 68,
-	lookLegs = 109,
-	lookFeet = 115,
-	lookAddons = 0,
+	lookType = 1676,
+	lookHead = 117,
+	lookBody = 94,
+	lookLegs = 128,
+	lookFeet = 114,
+	lookAddons = 2,
 }
 
 npcConfig.flags = {
@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Come into my tavern and share some stories!" },
+	{ text = "Buy everithing you need!" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -56,66 +56,274 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
--- Basic
-keywordHandler:addKeyword({ "hut" }, StdModule.say, { npcHandler = npcHandler, text = "I hope you like it. Would you like some {food}?" })
-keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, text = "I am the owner of this saloon. I call it Frodo's Hut. I am also {selling} food." })
-keywordHandler:addAliasKeyword({ "saloon" })
-keywordHandler:addKeyword({ "food" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you bread, cheese, ham, or meat. If you'd like to see my offers, ask me for a trade." })
-keywordHandler:addKeyword({ "news" }, StdModule.say, { npcHandler = npcHandler, text = "Some travelers from Edron told about a great treasure guarded by cruel demons in the dungeons there." })
-keywordHandler:addKeyword({ "king" }, StdModule.say, { npcHandler = npcHandler, text = "Oh, our beloved king! Thanks to him, alcohol is so cheap." })
-keywordHandler:addAliasKeyword({ "tibianus" })
-keywordHandler:addKeyword({ "general" }, StdModule.say, { npcHandler = npcHandler, text = "Harkath Bloodblade is the royal general." })
-keywordHandler:addKeyword({ "army" }, StdModule.say, { npcHandler = npcHandler, text = "Hehe. Great customers." })
-keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "Just call me Frodo." })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "It is exactly |TIME|." })
-keywordHandler:addKeyword({ "dungeons" }, StdModule.say, { npcHandler = npcHandler, text = "Ah yes, the graveyard dungeon. All I know is this riddle: His Grave to the south, the tree above, his soul in the shade. No idea what that means, though!" })
-keywordHandler:addAliasKeyword({ "graveyard" })
-keywordHandler:addKeyword({ "riddle" }, StdModule.say, { npcHandler = npcHandler, text = " I heard it when I was a child." })
-keywordHandler:addKeyword({ "one eyed stranger" }, StdModule.say, { npcHandler = npcHandler, text = "Yes, I remember him. His name was Berfasmur." })
-keywordHandler:addKeyword({ "berfasmur" }, StdModule.say, { npcHandler = npcHandler, text = "Sorry, he spoke only very little. I know nothing more about him." })
-keywordHandler:addKeyword({ "tibia" }, StdModule.say, { npcHandler = npcHandler, text = "Come on! You know that our world is called Tibia." })
-keywordHandler:addKeyword({ "excalibug" }, StdModule.say, { npcHandler = npcHandler, text = "Nothing more than a tale for warriors." })
-keywordHandler:addKeyword({ "ferumbras" }, StdModule.say, { npcHandler = npcHandler, text = "Uhm, do not mention him. It may scare customers away." })
-keywordHandler:addKeyword({ "cropwell" }, StdModule.say, { npcHandler = npcHandler, text = "No idea who that is, but maybe you'll find something in the Royal Archives..." })
-keywordHandler:addKeyword({ "royal archives" }, StdModule.say, { npcHandler = npcHandler, text = "Oh, the Royal Archives are in Rain Castle!" })
-keywordHandler:addKeyword({ "rain castle" }, StdModule.say, { npcHandler = npcHandler, text = "The king's residence has been renovated lately." })
-keywordHandler:addKeyword({ "carlin" }, StdModule.say, { npcHandler = npcHandler, text = "Many travellers tell funny stories about all the emancipated women in this northern town." })
-keywordHandler:addKeyword({ "thais" }, StdModule.say, { npcHandler = npcHandler, text = "Here in Thais is the center of Tibia." })
-keywordHandler:addKeyword({ "donald" }, StdModule.say, { npcHandler = npcHandler, text = "He is a little shy. In his youth he dreamed to become a druid." })
-keywordHandler:addKeyword({ "baxter" }, StdModule.say, { npcHandler = npcHandler, text = "He's able to drink a bottle or two." })
-keywordHandler:addKeyword({ "bozo" }, StdModule.say, { npcHandler = npcHandler, text = "I am trying to hire him for an evening or two." })
-keywordHandler:addKeyword({ "eclesius" }, StdModule.say, { npcHandler = npcHandler, text = "Oh, that old guy! He's a good customer, that's for sure." })
-keywordHandler:addKeyword({ "elane" }, StdModule.say, { npcHandler = npcHandler, text = "Can you believe that she actually told her guildfellows that alcohol is a bad thing?" })
-keywordHandler:addKeyword({ "galuna" }, StdModule.say, { npcHandler = npcHandler, text = "She makes excellent arrows and bows." })
-keywordHandler:addKeyword({ "gorn" }, StdModule.say, { npcHandler = npcHandler, text = "Many of his customers visit my Hut, too." })
-keywordHandler:addKeyword({ "gregor" }, StdModule.say, { npcHandler = npcHandler, text = "The knights have sometimes parties here after some arena fights." })
-keywordHandler:addKeyword({ "harkath bloodblade" }, StdModule.say, { npcHandler = npcHandler, text = "Too disciplined to enjoy life." })
-keywordHandler:addKeyword({ "hugo" }, StdModule.say, { npcHandler = npcHandler, text = "I think some time ago a stranger from Fibula with that name stayed here for some nights." })
-keywordHandler:addKeyword({ "lugri" }, StdModule.say, { npcHandler = npcHandler, text = "I overheard some conversations about his evilness. That's enough to hope, that I never ever meet him." })
-keywordHandler:addKeyword({ "lungelen" }, StdModule.say, { npcHandler = npcHandler, text = "A sorceress, you can find her in their guild sitting befor a book - always!" })
-keywordHandler:addKeyword({ "lynda" }, StdModule.say, { npcHandler = npcHandler, text = "Just between you and me: What a babe!" })
-keywordHandler:addKeyword({ "marvik" }, StdModule.say, { npcHandler = npcHandler, text = "Marvik seldom leaves his guildhall at all." })
-keywordHandler:addKeyword({ "mcronald" }, StdModule.say, { npcHandler = npcHandler, text = "The McRonalds are a nice couple. Donald is a dear friend of mine." })
-keywordHandler:addAliasKeyword({ "sherry" })
-keywordHandler:addKeyword({ "muriel" }, StdModule.say, { npcHandler = npcHandler, text = "Muriel has never visited this place." })
-keywordHandler:addKeyword({ "oswald" }, StdModule.say, { npcHandler = npcHandler, text = "I hate him. Each of his visits here ends with a bar brawl." })
-keywordHandler:addKeyword({ "quentin" }, StdModule.say, { npcHandler = npcHandler, text = "He hardly visits my humble tavern." })
-keywordHandler:addKeyword({ "samuel" }, StdModule.say, { npcHandler = npcHandler, text = "A loud neighbour, I get a lot of complaints about him." })
-keywordHandler:addKeyword({ "todd" }, StdModule.say, { npcHandler = npcHandler, text = "That fellow is filthy rich. He rented a room upstairs for months in advance and always orders the best beer and wine i serve." })
-keywordHandler:addKeyword({ "xodet" }, StdModule.say, { npcHandler = npcHandler, text = "I don't know where he gets these fluids. If I could sell them here, the hut would be crowded." })
+local itemsTable = {
+	["exercise weapons"] = {
+		{ itemName = "exercise axe", clientId = 28553, buy = 262500, subType = 500 },
+		{ itemName = "exercise bow", clientId = 28555, buy = 262500, subType = 500 },
+		{ itemName = "exercise club", clientId = 28554, buy = 262500, subType = 500 },
+		{ itemName = "exercise rod", clientId = 28556, buy = 262500, subType = 500 },
+		{ itemName = "exercise sword", clientId = 28552, buy = 262500, subType = 500 },
+		{ itemName = "exercise wand", clientId = 28557, buy = 262500, subType = 500 },
+		{ itemName = "durable exercise axe", clientId = 35280, buy = 945000, subType = 1800 },
+		{ itemName = "durable exercise bow", clientId = 35282, buy = 945000, subType = 1800 },
+		{ itemName = "durable exercise club", clientId = 35281, buy = 945000, subType = 1800 },
+		{ itemName = "durable exercise rod", clientId = 35283, buy = 945000, subType = 1800 },
+		{ itemName = "durable exercise sword", clientId = 35279, buy = 945000, subType = 1800 },
+		{ itemName = "durable exercise wand", clientId = 35284, buy = 945000, subType = 1800 },
+		{ itemName = "lasting exercise axe", clientId = 35286, buy = 7560000, subType = 14400 },
+		{ itemName = "lasting exercise bow", clientId = 35288, buy = 7560000, subType = 14400 },
+		{ itemName = "lasting exercise club", clientId = 35287, buy = 7560000, subType = 14400 },
+		{ itemName = "lasting exercise rod", clientId = 35289, buy = 7560000, subType = 14400 },
+		{ itemName = "lasting exercise sword", clientId = 35285, buy = 7560000, subType = 14400 },
+		{ itemName = "lasting exercise wand", clientId = 35290, buy = 7560000, subType = 14400 },
+	},
+	["distance"] = {
+		{ itemName = "arrow", clientId = 3447, buy = 2 },
+		{ itemName = "bolt", clientId = 3446, buy = 4 },
+		{ itemName = "crystalline arrow", clientId = 15793, buy = 450 },
+		{ itemName = "drill bolt", clientId = 16142, buy = 12 },
+		{ itemName = "diamond arrow", clientId = 35901, buy = 130 },
+		{ itemName = "earth arrow", clientId = 774, buy = 5 },
+		{ itemName = "envenomed arrow", clientId = 16143, buy = 12 },
+		{ itemName = "flaming arrow", clientId = 763, buy = 5 },
+		{ itemName = "flash arrow", clientId = 761, buy = 5 },
+		{ itemName = "onyx arrow", clientId = 7365, buy = 7 },
+		{ itemName = "piercing bolt", clientId = 7363, buy = 5 },
+		{ itemName = "power bolt", clientId = 3450, buy = 7 },
+		{ itemName = "prismatic bolt", clientId = 16141, buy = 20 },
+		{ itemName = "quiver", clientId = 35562, buy = 400 },
+		{ itemName = "royal spear", clientId = 7378, buy = 15 },
+		{ itemName = "shiver arrow", clientId = 762, buy = 5 },
+		{ itemName = "sniper arrow", clientId = 7364, buy = 5 },
+		{ itemName = "spectral bolt", clientId = 35902, buy = 70 },
+		{ itemName = "tarsal arrow", clientId = 14251, buy = 6 },
+		{ itemName = "throwing star", clientId = 3287, buy = 42 },
+		{ itemName = "vortex bolt", clientId = 14252, buy = 6 },
+	},
+	["reflect system"] = {
+		{ itemName = "reflect elixir", clientId = 33892, buy = 50000000 },
+	},
+	["special foods"] = {
+		{ itemName = "blessed steak", clientId = 9086, buy = 10000000 },
+		{ itemName = "carrion casserole", clientId = 29414, buy = 10000000 },
+		{ itemName = "carrot cake", clientId = 9087, buy = 10000000 },
+		{ itemName = "consecrated beef", clientId = 29415, buy = 10000000 },
+		{ itemName = "hydra tongue salad", clientId = 9080, buy = 10000000 },
+		{ itemName = "rotworm stew", clientId = 9079, buy = 10000000 },
+		{ itemName = "tropical fried terrorbird", clientId = 9082, buy = 10000000 },
+		{ itemName = "veggie casserole", clientId = 9084, buy = 10000000 },
+	},
+	["rods"] = {
+		{ itemName = "exercise rod", clientId = 28556, buy = 236250, subType = 500 },
+		{ itemName = "hailstorm rod", clientId = 3067, buy = 15000 },
+		{ itemName = "moonlight rod", clientId = 3070, buy = 1000 },
+		{ itemName = "necrotic rod", clientId = 3069, buy = 5000 },
+		{ itemName = "northwind rod", clientId = 8083, buy = 7500 },
+		{ itemName = "snakebite rod", clientId = 3066, buy = 500 },
+		{ itemName = "springsprout rod", clientId = 8084, buy = 18000 },
+		{ itemName = "terra rod", clientId = 3065, buy = 10000 },
+		{ itemName = "underworld rod", clientId = 8082, buy = 22000 },
+	},
+	["wands"] = {
+		{ itemName = "exercise wand", clientId = 28557, buy = 236250, subType = 500 },
+		{ itemName = "wand of cosmic energy", clientId = 3073, buy = 10000 },
+		{ itemName = "wand of decay", clientId = 3072, buy = 5000 },
+		{ itemName = "wand of draconia", clientId = 8093, buy = 7500 },
+		{ itemName = "wand of dragonbreath", clientId = 3075, buy = 1000 },
+		{ itemName = "wand of inferno", clientId = 3071, buy = 15000 },
+		{ itemName = "wand of starstorm", clientId = 8092, buy = 18000 },
+		{ itemName = "wand of voodoo", clientId = 8094, buy = 22000 },
+		{ itemName = "wand of vortex", clientId = 3074, buy = 500 },
+	},
+	["potions"] = {
+		{ itemName = "great health potion", clientId = 239, buy = 225 },
+		{ itemName = "great mana potion", clientId = 238, buy = 158 },
+		{ itemName = "great spirit potion", clientId = 7642, buy = 254 },
+		{ itemName = "health potion", clientId = 266, buy = 50 },
+		{ itemName = "mana potion", clientId = 268, buy = 56 },
+		{ itemName = "magic shield potion", clientId = 35563, buy = 50000 },
+		{ itemName = "strong health potion", clientId = 236, buy = 115 },
+		{ itemName = "strong mana potion", clientId = 237, buy = 108 },
+		{ itemName = "supreme health potion", clientId = 23375, buy = 650 },
+		{ itemName = "ultimate health potion", clientId = 7643, buy = 379 },
+		{ itemName = "ultimate mana potion", clientId = 23373, buy = 488 },
+		{ itemName = "ultimate spirit potion", clientId = 23374, buy = 488 },
+	},
+	["runes"] = {
+		{ itemName = "animate dead rune", clientId = 3203, buy = 375 },
+		{ itemName = "avalanche rune", clientId = 3161, buy = 64 },
+		{ itemName = "blank rune", clientId = 3147, buy = 10 },
+		{ itemName = "chameleon rune", clientId = 3178, buy = 210 },
+		{ itemName = "convince creature rune", clientId = 3177, buy = 80 },
+		{ itemName = "cure poison rune", clientId = 3153, buy = 65 },
+		{ itemName = "destroy field rune", clientId = 3148, buy = 15 },
+		{ itemName = "disintegrate rune", clientId = 3197, buy = 26 },
+		{ itemName = "energy bomb rune", clientId = 3149, buy = 203 },
+		{ itemName = "energy field rune", clientId = 3164, buy = 38 },
+		{ itemName = "energy wall rune", clientId = 3166, buy = 85 },
+		{ itemName = "explosion rune", clientId = 3200, buy = 31 },
+		{ itemName = "fire bomb rune", clientId = 3192, buy = 147 },
+		{ itemName = "fire field rune", clientId = 3188, buy = 28 },
+		{ itemName = "fire wall rune", clientId = 3190, buy = 61 },
+		{ itemName = "fireball rune", clientId = 3189, buy = 30 },
+		{ itemName = "great fireball rune", clientId = 3191, buy = 64 },
+		{ itemName = "heavy magic missile rune", clientId = 3198, buy = 12 },
+		{ itemName = "holy missile rune", clientId = 3182, buy = 16 },
+		{ itemName = "icicle rune", clientId = 3158, buy = 30 },
+		{ itemName = "intense healing rune", clientId = 3152, buy = 95 },
+		{ itemName = "light magic missile rune", clientId = 3174, buy = 4 },
+		{ itemName = "magic wall rune", clientId = 3180, buy = 116 },
+		{ itemName = "paralyse rune", clientId = 3165, buy = 700 },
+		{ itemName = "poison bomb rune", clientId = 3173, buy = 85 },
+		{ itemName = "poison field rune", clientId = 3172, buy = 21 },
+		{ itemName = "poison wall rune", clientId = 3176, buy = 52 },
+		{ itemName = "soulfire rune", clientId = 3195, buy = 46 },
+		{ itemName = "stalagmite rune", clientId = 3179, buy = 12 },
+		{ itemName = "stone shower rune", clientId = 3175, buy = 41 },
+		{ itemName = "sudden death rune", clientId = 3155, buy = 162 },
+		{ itemName = "thunderstorm rune", clientId = 3202, buy = 52 },
+		{ itemName = "ultimate healing rune", clientId = 3160, buy = 175 },
+		{ itemName = "wild growth rune", clientId = 3156, buy = 160 },
+	},
+	["supplies"] = {
+		{ itemName = "brown mushroom", clientId = 3725, buy = 10 },
+		{ itemName = "ham", clientId = 3582, buy = 10 },
+		{ itemName = "meat", clientId = 3577, buy = 5 },
+		{ itemName = "shapeshifter ring", clientId = 907, buy = 5500, subType = 15 },
+	},
+	["tools"] = {
+		{ itemName = "basket", clientId = 2855, buy = 6 },
+		{ itemName = "bottle", clientId = 2875, buy = 3 },
+		{ itemName = "bucket", clientId = 2873, buy = 4 },
+		{ itemName = "torch", clientId = 2920, buy = 2 },
+		{ itemName = "worm", clientId = 3492, buy = 1 },
+	},
+	["postal"] = {
+		{ itemName = "label", clientId = 3507, buy = 1 },
+		{ itemName = "letter", clientId = 3505, buy = 8 },
+		{ itemName = "parcel", clientId = 3503, buy = 15 },
+	},
+	["backpacks"] = {
+		{ itemName = "brown backpack", clientId = 2854, buy = 20 },
+		{ itemName = "green backpack", clientId = 2865, buy = 20 },
+		{ itemName = "yellow backpack", clientId = 2866, buy = 20 },
+		{ itemName = "red backpack", clientId = 2867, buy = 20 },
+		{ itemName = "purple backpack", clientId = 2868, buy = 20 },
+		{ itemName = "blue backpack", clientId = 2869, buy = 20 },
+		{ itemName = "grey backpack", clientId = 2870, buy = 20 },
+		{ itemName = "golden backpack", clientId = 2871, buy = 20 },
+		{ itemName = "camouflage backpack", clientId = 2872, buy = 20 },
+		{ itemName = "beach backpack", clientId = 5949, buy = 20 },
+		{ itemName = "fur backpack", clientId = 7342, buy = 20 },
+		{ itemName = "brocade backpack", clientId = 8860, buy = 20 },
+		{ itemName = "demon backpack", clientId = 9601, buy = 20000 },
+		{ itemName = "orange backpack", clientId = 9602, buy = 20 },
+		{ itemName = "moon backpack", clientId = 9604, buy = 20000 },
+		{ itemName = "crown backpack", clientId = 9605, buy = 20000 },
+		{ itemName = "heart backpack", clientId = 10202, buy = 20000 },
+		{ itemName = "expedition backpack", clientId = 10324, buy = 20000 },
+		{ itemName = "dragon backpack", clientId = 10326, buy = 20000 },
+		{ itemName = "minotaur backpack", clientId = 10327, buy = 20000 },
+		{ itemName = "santa backpack", clientId = 10346, buy = 20000 },
+		{ itemName = "deepling backpack", clientId = 14248, buy = 20000 },
+		{ itemName = "buggy backpack", clientId = 14249, buy = 20000 },
+		{ itemName = "anniversary backpack", clientId = 14674, buy = 20000 },
+		{ itemName = "mushroom backpack", clientId = 16099, buy = 20000 },
+		{ itemName = "crystal backpack", clientId = 16100, buy = 20000 },
+		{ itemName = "pannier backpack", clientId = 19159, buy = 20000 },
+		{ itemName = "cake backpack", clientId = 20347, buy = 20000 },
+		{ itemName = "glooth backpack", clientId = 21295, buy = 20000 },
+		{ itemName = "war backpack", clientId = 21445, buy = 20000 },
+		{ itemName = "wolf backpack", clientId = 22084, buy = 20000 },
+		{ itemName = "energetic backpack", clientId = 23525, buy = 20000 },
+		{ itemName = "pillow backpack", clientId = 24393, buy = 20000 },
+		{ itemName = "bithday backpack", clientId = 24395, buy = 20000 },
+		{ itemName = "book backpack", clientId = 28571, buy = 20000 },
+		{ itemName = "festive backpack", clientId = 30197, buy = 20000 },
+		{ itemName = "winged backpack", clientId = 31625, buy = 20000 },
+		{ itemName = "ghost backpack", clientId = 32620, buy = 200000 },
+		{ itemName = "raccoon backpack", clientId = 35577, buy = 20000 },
+		{ itemName = "25 years backpack", clientId = 39693, buy = 20000 },
+		{ itemName = "lilypad backpack", clientId = 39754, buy = 20000 },
+	},
+	['upgrades'] = {
+		{ itemName = "upgrade crystal", clientId = 942, buy = 100000000 },
+		{ itemName = "upgrade remover", clientId = 941, buy = 50000000 },
+	},
+	['rings'] = {
+		{ itemName = "axe ring", clientId = 3092, buy = 2000 },
+		{ itemName = "club ring", clientId = 3093, buy = 2000 },
+		{ itemName = "sword ring", clientId = 3094, buy = 2000 },
+		{ itemName = "dwarven ring", clientId = 3097, buy = 2000 },
+		{ itemName = "energy ring", clientId = 3051, buy = 2000 },
+		{ itemName = "might ring", clientId = 3048, buy = 20000 },
+		{ itemName = "time ring", clientId = 3053, buy = 2000 },
+		{ itemName = "ring of blue plasma", clientId = 23529, buy = 10000 },
+		{ itemName = "ring of red plasma", clientId = 23533, buy = 10000 },
+		{ itemName = "ring of green plasma", clientId = 23531, buy = 10000 },
+		{ itemName = "prismatic ring", clientId = 16114, buy = 300000 },
+	},
+	['amulets'] = {
+		{ itemName = "collar of blue plasma", clientId = 23542, buy = 10000 },
+		{ itemName = "collar of green plasma", clientId = 23543, buy = 10000 },
+		{ itemName = "collar of red plasma", clientId = 23544, buy = 10000 },
+		{ itemName = "stone skin amulet", clientId = 3081, buy = 20000 },
+		{ itemName = "gill necklace", clientId = 16108, buy = 10000 },
+		{ itemName = "garlic necklace", clientId = 3083, buy = 2000 },
+	},
+	['foods'] = {
+		{ itemName = "brown mushroom", clientId = 3725, buy = 10 },
+	},
+	["flowers"] = {
+		{ itemName = "bowl of evergreen flowers", clientId = 8763, buy = 150 },
+		{ itemName = "flower bowl", clientId = 2983, buy = 150 },
+	},
+}
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Frodo's Hut. You heard about the {news}?")
+local function creatureSayCallback(npc, creature, type, message)
+	local player = Player(creature)
+
+	if not npcHandler:checkInteraction(npc, creature) then
+		return false
+	end
+
+	for category, items in pairs(itemsTable) do
+		if message == category then
+				npcHandler:say("Here are the items for the category " .. category .. ".", npc, creature)
+				npc:openShopWindowTable(player, items)
+				return
+		end
+	end
+
+
+end
+
+-- Basic
+
+npcHandler:setMessage(MESSAGE_GREET, "Welcome.  I sell a selection of {rods}, {runes}, {distance}, {special foods}, {reflect system}, {tools}, {potions}, {backpacks}, {flowers}, {exercise weapons}, {rings}, {postal}, {amulets}, {foods}, {upgrades}, {wands}, just ask!.?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Please come back from time to time.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Please come back from time to time.")
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
-npcConfig.shop = {
-	{ itemName = "bread", clientId = 3600, buy = 4 },
-	{ itemName = "cheese", clientId = 3607, buy = 6 },
-	{ itemName = "ham", clientId = 3582, buy = 8 },
-	{ itemName = "meat", clientId = 3577, buy = 5 },
-}
+local function onTradeRequest(npc, creature)
+	local player = Player(creature)
+
+	local allItems = {}
+	for _, items in pairs(itemsTable) do
+			for _, item in ipairs(items) do
+					table.insert(allItems, item)
+			end
+	end
+
+	npc:openShopWindowTable(player, allItems)
+	npcHandler:say("Here are all the items available.", npc, creature)
+
+	return true
+end
+
+npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
 	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)
