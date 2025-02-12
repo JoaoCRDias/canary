@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <houses>
-	<house name="Unnamed House #3005" houseid="3005" entryx="1015" entryy="995" entryz="7" rent="0" townid="1" size="82" clientid="0" beds="0" />
 	<house name="Unnamed House #3006" houseid="3006" entryx="1020" entryy="990" entryz="7" rent="0" townid="1" size="21" clientid="0" beds="0" />
 	<house name="Unnamed House #3007" houseid="3007" entryx="1027" entryy="980" entryz="7" rent="0" townid="1" size="24" clientid="0" beds="0" />
 	<house name="Unnamed House #3008" houseid="3008" entryx="1023" entryy="980" entryz="7" rent="0" townid="1" size="21" clientid="0" beds="0" />
@@ -38,4 +37,7 @@
 	<house name="Unnamed House #3040" houseid="3040" entryx="987" entryy="986" entryz="7" rent="0" townid="1" size="23" clientid="0" beds="0" />
 	<house name="Unnamed House #3041" houseid="3041" entryx="1005" entryy="989" entryz="7" rent="0" townid="1" size="109" clientid="0" beds="0" />
 	<house name="Unnamed House #3042" houseid="3042" entryx="1026" entryy="919" entryz="5" rent="0" townid="1" size="492" clientid="0" beds="0" />
+	<house name="Unnamed House #3043" houseid="3043" entryx="967" entryy="1005" entryz="7" rent="0" townid="1" size="44" clientid="0" beds="0" />
+	<house name="Unnamed House #3044" houseid="3044" entryx="967" entryy="996" entryz="7" rent="0" townid="1" size="28" clientid="0" beds="0" />
+	<house name="Unnamed House #3045" houseid="3045" entryx="967" entryy="991" entryz="7" rent="0" townid="1" size="34" clientid="0" beds="0" />
 </houses>

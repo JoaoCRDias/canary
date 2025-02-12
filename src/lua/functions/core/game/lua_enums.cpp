@@ -857,6 +857,7 @@ void LuaEnums::initItemIdEnums(lua_State* L) {
 	registerEnum(L, ITEM_GOLD_COIN);
 	registerEnum(L, ITEM_PLATINUM_COIN);
 	registerEnum(L, ITEM_CRYSTAL_COIN);
+	registerEnum(L, ITEM_SOUL_COIN);
 	registerEnum(L, ITEM_STORE_COIN);
 	registerEnum(L, ITEM_REWARD_CHEST);
 	registerEnum(L, ITEM_REWARD_CONTAINER);
@@ -905,6 +906,8 @@ void LuaEnums::initItemIdEnums(lua_State* L) {
 	registerEnum(L, ITEM_DIAMOND_ARROW);
 
 	registerEnum(L, ITEM_GOLD_POUCH);
+	registerEnum(L, ITEM_RING_POUCH);
+	registerEnum(L, ITEM_AMULET_POUCH);
 	registerEnum(L, ITEM_STORE_INBOX);
 
 	registerEnum(L, ITEM_DIVINE_EMPOWERMENT);

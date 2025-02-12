@@ -1,13 +1,22 @@
 <?xml version="1.0"?>
 <npcs>
-	<npc centerx="962" centery="989" centerz="7" radius="1">
-		<npc name="Loot Buyer" x="0" y="0" z="7" spawntime="60" />
+	<npc centerx="997" centery="993" centerz="7" radius="1">
+		<npc name="Trainers" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1000" centery="993" centerz="7" radius="1">
+		<npc name="Hunts" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1003" centery="993" centerz="7" radius="1">
+		<npc name="Quests" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1006" centery="993" centerz="7" radius="1">
+		<npc name="Forge" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1013" centery="995" centerz="7" radius="1">
+		<npc name="Unholy King" x="0" y="-1" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="978" centery="998" centerz="7" radius="1">
 		<npc name="Dark Rodo" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1000" centery="1002" centerz="7" radius="1">
-		<npc name="Sigfried" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="1020" centery="998" centerz="8" radius="1">
 		<npc name="Loot Buyer" x="0" y="0" z="8" spawntime="60" />

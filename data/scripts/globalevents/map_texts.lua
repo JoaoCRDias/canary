@@ -2,12 +2,11 @@
 local mapTexts = GlobalEvent("MapTexts")
 
 local effects = {
-	{position = Position(1000, 1000, 7), text = 'Bem vindo ao Kingsman OT!', effect = CONST_ME_TUTORIALSQUARE},
-	{position = Position(1000, 994, 7), text = 'TP Hub', effect = CONST_ME_TUTORIALSQUARE},
+	{position = Position(1000, 1000, 7), text = 'Bem vindo ao Turbo Baiak!', effect = CONST_ME_TUTORIALSQUARE},
+	{position = Position(1009, 993, 7), text = 'Roulette', effect = CONST_ME_TUTORIALSQUARE},
 	{position = Position(1020, 991, 8), text = 'Easy', effect = CONST_ME_TUTORIALSQUARE},
 	{position = Position(1023, 991, 8), text = 'Medium', effect = CONST_ME_TUTORIALSQUARE},
 	{position = Position(1026, 991, 8), text = 'Hard', effect = CONST_ME_TUTORIALSQUARE},
-	{position = Position(1028, 963, 8), text = 'Hunts', effect = CONST_ME_TUTORIALSQUARE},
 
 }
 

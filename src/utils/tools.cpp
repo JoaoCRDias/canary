@@ -1288,6 +1288,12 @@ const char* getReturnMessage(ReturnValue value) {
 		case RETURNVALUE_ITEMCANNOTBEMOVEDPOUCH:
 			return "This item cannot be moved there. You can only place gold, platinum and crystal coins in your gold pouch.";
 
+		case RETURNVALUE_ITEMCANNOTBEMOVEDRINGPOUCH:
+			return "This item cannot be moved there. You can only place rings in your ring pouch.";
+
+		case RETURNVALUE_ITEMCANNOTBEMOVEDAMULETPOUCH:
+			return "This item cannot be moved there. You can only place amulets in your amulet pouch.";
+
 		case RETURNVALUE_ITEMCANNOTBEMOVEDTHERE:
 			return "This item cannot be moved there.";
 

@@ -1937,6 +1937,33 @@ ReturnValue Game::checkMoveItemToCylinder(const std::shared_ptr<Player> &player,
 			return RETURNVALUE_NOERROR;
 		}
 
+		if (containerID == ITEM_RING_POUCH && !containerToStow) {
+			if (!item->isRing()) {
+				return RETURNVALUE_ITEMCANNOTBEMOVEDRINGPOUCH;
+			}
+
+			// prevent move up from ponch to store inbox.
+			if (!item->canBeMovedToStore() && fromCylinder->getContainer() && fromCylinder->getContainer()->getID() == ITEM_RING_POUCH) {
+				return RETURNVALUE_NOTBOUGHTINSTORE;
+			}
+
+			return RETURNVALUE_NOERROR;
+		}
+
+		if (containerID == ITEM_AMULET_POUCH && !containerToStow) {
+
+			if (!item->isAmulet()) {
+				return RETURNVALUE_ITEMCANNOTBEMOVEDAMULETPOUCH;
+			}
+
+			// prevent move up from ponch to store inbox.
+			if (!item->canBeMovedToStore() && fromCylinder->getContainer() && fromCylinder->getContainer()->getID() == ITEM_AMULET_POUCH) {
+				return RETURNVALUE_NOTBOUGHTINSTORE;
+			}
+
+			return RETURNVALUE_NOERROR;
+		}
+
 		std::shared_ptr<Container> topParentContainer = toCylinderContainer->getRootContainer();
 		const auto parentContainer = topParentContainer->getParent() ? topParentContainer->getParent()->getContainer() : nullptr;
 		auto isStoreInbox = parentContainer && parentContainer->isStoreInbox();
@@ -1964,6 +1991,14 @@ ReturnValue Game::checkMoveItemToCylinder(const std::shared_ptr<Player> &player,
 				isValidMoveItem = true;
 			}
 
+			if (item->getID() == ITEM_RING_POUCH) {
+				isValidMoveItem = true;
+			}
+
+			if (item->getID() == ITEM_AMULET_POUCH) {
+				isValidMoveItem = true;
+			}
+
 			if (!isValidMoveItem) {
 				return RETURNVALUE_ITEMCANNOTBEMOVEDTHERE;
 			}
@@ -1975,7 +2010,7 @@ ReturnValue Game::checkMoveItemToCylinder(const std::shared_ptr<Player> &player,
 
 		if (item->getContainer() && !item->isStoreItem()) {
 			for (const std::shared_ptr<Item> &containerItem : item->getContainer()->getItems(true)) {
-				if (containerItem->isStoreItem() && !containerToStow && ((containerID != ITEM_GOLD_POUCH && containerID != ITEM_DEPOT && containerID != ITEM_STORE_INBOX) || (topParentContainer->getParent() && topParentContainer->getParent()->getContainer() && (!topParentContainer->getParent()->getContainer()->isDepotChest() || topParentContainer->getParent()->getContainer()->getID() != ITEM_STORE_INBOX)))) {
+				if (containerItem->isStoreItem() && !containerToStow && ((containerID != ITEM_GOLD_POUCH && containerID != ITEM_RING_POUCH && containerID != ITEM_AMULET_POUCH && containerID != ITEM_DEPOT && containerID != ITEM_STORE_INBOX) || (topParentContainer->getParent() && topParentContainer->getParent()->getContainer() && (!topParentContainer->getParent()->getContainer()->isDepotChest() || topParentContainer->getParent()->getContainer()->getID() != ITEM_STORE_INBOX)))) {
 					return RETURNVALUE_NOTPOSSIBLE;
 				}
 			}
@@ -2735,6 +2770,10 @@ void Game::addMoney(const std::shared_ptr<Cylinder> &cylinder, uint64_t money, u
 		}
 	};
 
+	uint32_t soulCoins = money / 1000000;
+	money -= soulCoins * 1000000;
+	addCoins(ITEM_SOUL_COIN, soulCoins);
+
 	uint32_t crystalCoins = money / 10000;
 	money -= crystalCoins * 10000;
 	addCoins(ITEM_CRYSTAL_COIN, crystalCoins);
@@ -3158,12 +3197,14 @@ ReturnValue Game::internalCollectManagedItems(const std::shared_ptr<Player> &pla
 
 	// Send money to the bank
 	if (g_configManager().getBoolean(AUTOBANK)) {
-		if (item->getID() == ITEM_GOLD_COIN || item->getID() == ITEM_PLATINUM_COIN || item->getID() == ITEM_CRYSTAL_COIN) {
+		if (item->getID() == ITEM_GOLD_COIN || item->getID() == ITEM_PLATINUM_COIN || item->getID() == ITEM_CRYSTAL_COIN || item->getID() == ITEM_SOUL_COIN) {
 			uint64_t money = 0;
 			if (item->getID() == ITEM_PLATINUM_COIN) {
 				money = item->getItemCount() * 100;
 			} else if (item->getID() == ITEM_CRYSTAL_COIN) {
 				money = item->getItemCount() * 10000;
+			} else if (item->getID() == ITEM_SOUL_COIN) {
+				money = item->getItemCount() * 1000000;
 			} else {
 				money = item->getItemCount();
 			}
@@ -3324,6 +3365,8 @@ uint64_t Game::getItemMarketPrice(const std::map<uint16_t, uint64_t> &itemMap, b
 			total += 100 * it.second;
 		} else if (it.first == ITEM_CRYSTAL_COIN) {
 			total += 10000 * it.second;
+		} else if (it.first == ITEM_SOUL_COIN) {
+			total += 1000000 * it.second;
 		} else {
 			auto marketIt = itemsPriceMap.find(it.first);
 			if (marketIt != itemsPriceMap.end()) {
@@ -5747,6 +5790,16 @@ void Game::playerSetManagedContainer(uint32_t playerId, ObjectCategory_t categor
 	const std::shared_ptr<Container> &container = thing->getContainer();
 	auto allowConfig = g_configManager().getBoolean(TOGGLE_GOLD_POUCH_ALLOW_ANYTHING) || g_configManager().getBoolean(TOGGLE_GOLD_POUCH_QUICKLOOT_ONLY);
 	if (!container || ((container->getID() == ITEM_GOLD_POUCH && category != OBJECTCATEGORY_GOLD) && !allowConfig)) {
+		player->sendCancelMessage(RETURNVALUE_NOTPOSSIBLE);
+		return;
+	}
+
+	if (!container || ((container->getID() == ITEM_RING_POUCH && category != OBJECTCATEGORY_RINGS))) {
+		player->sendCancelMessage(RETURNVALUE_NOTPOSSIBLE);
+		return;
+	}
+
+	if (!container || ((container->getID() == ITEM_AMULET_POUCH && category != OBJECTCATEGORY_NECKLACES))) {
 		player->sendCancelMessage(RETURNVALUE_NOTPOSSIBLE);
 		return;
 	}

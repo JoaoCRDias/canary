@@ -122,17 +122,17 @@ GameStore.Categories = {
 		state = GameStore.States.STATE_NONE,
 		offers = {
 			{
-				name = "Rune Refiller",
+				name = "Portable Imbuing Shrine",
 				price = 300,
-				itemtype = 49280,
+				itemtype = 60240,
 				count = 1,
-				description = "<i>Refill your runes during the hunt</i>",
+				description = "<i>Make imbuements everywhere</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE,
 			},
 			{
-				name = "Portable Imbuing Shrine",
+				name = "Portable Forge",
 				price = 300,
-				itemtype = 49285,
+				itemtype = 50014,
 				count = 1,
 				description = "<i>Make imbuements everywhere</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE,
@@ -140,7 +140,7 @@ GameStore.Categories = {
 			{
 				name = "Loot Seller",
 				price = 500,
-				itemtype = 60437,
+				itemtype = 60201,
 				count = 1,
 				description = "<i>Sell all loot inside loot pouch</i>\n\nCD 5 minutes.",
 				type = GameStore.OfferTypes.OFFER_TYPE_ITEM_UNIQUE,
@@ -185,7 +185,7 @@ GameStore.Categories = {
 			{
 				name = "Turbo Ring",
 				price = 500,
-				itemtype = 49303,
+				itemtype = 60455,
 				count = 1,
 				movable = true,
 				home = true,
@@ -205,7 +205,7 @@ GameStore.Categories = {
 			{
 				name = "OT Backpack",
 				price = 300,
-				itemtype = 49284,
+				itemtype = 60213,
 				movable = true,
 				count = 1,
 				home = true,
@@ -271,7 +271,7 @@ GameStore.Categories = {
 			{
 				name = "Dust Potion",
 				price = 100,
-				itemtype = 49289,
+				itemtype = 60000,
 				movable = true,
 				count = 1,
 				description = "<i>Fill all your dust limit</i>",

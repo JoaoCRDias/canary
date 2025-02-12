@@ -373,7 +373,7 @@ pushWhenAttacking = false
 -- Note: If a map with the same name already exists in the world folder, the map will not be downloaded, even if toggleDownloadMap is set to true.
 toggleDownloadMap = false
 mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.1.0/otservbr.otbm"
-mapName = "kingsman"
+mapName = "turbomap"
 mapAuthor = "ADM Kolisium"
 
 -- Party List limitations

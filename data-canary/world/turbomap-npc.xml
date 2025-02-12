@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<npcs>
+	<npc centerx="997" centery="993" centerz="7" radius="1">
+		<npc name="Trainers" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1000" centery="993" centerz="7" radius="1">
+		<npc name="Hunts" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1003" centery="993" centerz="7" radius="1">
+		<npc name="Bosses" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1006" centery="993" centerz="7" radius="1">
+		<npc name="Quests" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1005" centery="1003" centerz="7" radius="1" />
+	<npc centerx="998" centery="994" centerz="8" radius="1">
+		<npc name="Addons" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="1006" centery="994" centerz="8" radius="1">
+		<npc name="Mounts" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="1011" centery="995" centerz="8" radius="1">
+		<npc name="Unholy King" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+</npcs>
