@@ -90,7 +90,6 @@ monster.loot = {
 	{ name = "wand of inferno", chance = 5590 },
 	{ name = "boots of haste", chance = 540 },
 	{ name = "protection amulet", chance = 8740 },
-	{ name = "sudden death rune", chance = 4200, maxCount = 8 },
 	{ name = "skull staff", chance = 700 },
 	{ name = "knight armor", chance = 4550 },
 	{ name = "crown armor", chance = 1400 },

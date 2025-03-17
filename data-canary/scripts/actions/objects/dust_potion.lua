@@ -1,6 +1,6 @@
 local conf = {
 	toggleLogger = true, -- if send terminal message when player use the item
-	dustPotionId = 60000, -- register the item
+	dustPotionId = 59394, -- register the item
 	exhaust = 300,
 }
 

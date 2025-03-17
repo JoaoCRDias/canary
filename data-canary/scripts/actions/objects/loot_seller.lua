@@ -13,9 +13,9 @@ logger.info("The price list for the Loot Seller has been updated, with "..count.
 
 local conf = {
     toggleLogger = true, -- if send terminal message when player use the item
-    itemSellerId = 60201, -- register the item
+    itemSellerId = 59371, -- register the item
     exhaust = 300,
-    lootPouchId = 61812, -- pouchId
+    lootPouchId = 59294, -- pouchId
     percentPrice = 1, -- if u want to change to lose price, use 0.9 to earn 90% of origin price, 0.55 to 55% etc...
     maxValueSell = 9000, -- TAKE CARE, it is counted by slots NOT BY COUNT OF STACKABLES, 200 I think is a safe number
 }

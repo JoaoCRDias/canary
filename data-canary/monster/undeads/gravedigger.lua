@@ -84,7 +84,6 @@ monster.loot = {
 	{ name = "platinum coin", chance = 24470 },
 	{ name = "yellow gem", chance = 800 },
 	{ name = "wand of inferno", chance = 5590 },
-	{ name = "sudden death rune", chance = 7300 },
 	{ name = "skull staff", chance = 130 },
 	{ name = "mysterious voodoo skull", chance = 100 },
 	{ id = 6299, chance = 800 }, -- death ring
