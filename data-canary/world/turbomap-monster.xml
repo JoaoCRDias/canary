@@ -8956,11 +8956,11 @@
 	<monster centerx="796" centery="1409" centerz="7" radius="1">
 		<monster name="Bakragore" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</monster>
-	<monster centerx="814" centery="1409" centerz="7" radius="1">
-		<monster name="Goshnar's Spite" x="0" y="0" z="7" spawntime="60" direction="2" />
+	<monster centerx="808" centery="1409" centerz="7" radius="1">
+		<monster name="Goshnar's Spite" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</monster>
-	<monster centerx="818" centery="1409" centerz="7" radius="1">
-		<monster name="Goshnar's Megalomania Purple" x="0" y="0" z="7" spawntime="60" />
+	<monster centerx="824" centery="1409" centerz="7" radius="1">
+		<monster name="Goshnar's Megalomania Purple" x="0" y="0" z="7" spawntime="60" direction="3" />
 	</monster>
 	<monster centerx="834" centery="1409" centerz="7" radius="1">
 		<monster name="Outburst" x="0" y="0" z="7" spawntime="60" direction="2" />

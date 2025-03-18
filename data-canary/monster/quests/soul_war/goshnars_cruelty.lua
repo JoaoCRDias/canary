@@ -104,7 +104,6 @@ monster.attacks = {
 	{ name = "singlecloudchain", interval = 6000, chance = 40, minDamage = -1700, maxDamage = -2500, range = 6, effect = CONST_ME_ENERGYHIT, target = true },
 	{ name = "combat", interval = 2000, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -1000, maxDamage = -2500, range = 7, radius = 4, shootEffect = CONST_ANI_EXPLOSION, effect = CONST_ME_DRAWBLOOD, target = true },
 	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -1500, maxDamage = -3000, radius = 3, effect = CONST_ME_GROUNDSHAKER, target = false },
-	{ name = "cruelty transform elemental", interval = SoulWarQuest.goshnarsCrueltyWaveInterval * 1000, chance = 50 },
 }
 
 monster.defenses = {
@@ -134,19 +133,6 @@ monster.immunities = {
 	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
 }
-
-local firstTime = 0
-mType.onThink = function(monster, interval)
-	firstTime = firstTime + interval
-	-- Run only 15 seconds before creation
-	if firstTime >= 15000 then
-		monster:goshnarsDefenseIncrease("greedy-maw-action")
-	end
-end
-
-mType.onSpawn = function(monsterCallback)
-	firstTime = 0
-end
 
 mType.onDisappear = function(monster, creature)
 	if creature:getName() == "Goshnar's Cruelty" then
