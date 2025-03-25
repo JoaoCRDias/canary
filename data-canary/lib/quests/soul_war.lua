@@ -2,6 +2,7 @@ SoulWarQuest = {
 	-- Item ids
 	bagYouDesireItemId = 34109,
 	bagYouDesireChancePerTaint = 10, -- Increases % per taint
+	theBloodOfCloakTerrorIds = { 33854, 34006, 34007 },
 	bagYouDesireMonsters = {
 		"Bony Sea Devil",
 		"Brachiodemon",

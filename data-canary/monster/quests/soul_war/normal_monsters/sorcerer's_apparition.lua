@@ -34,7 +34,7 @@ monster.speed = 235
 monster.manaCost = 0
 
 monster.events = {
-	"MirroredNightmareBossAccess",
+
 }
 
 monster.changeTarget = {

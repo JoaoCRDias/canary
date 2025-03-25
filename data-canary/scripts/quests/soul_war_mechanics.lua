@@ -3,7 +3,6 @@ local login = CreatureEvent("SoulWarLogin")
 function login.onLogin(player)
 	player:registerEvent("GoshnarsHatredBuff")
 	player:resetTaints()
-	player:resetGoshnarSymbolTormentCounter()
 	return true
 end
 
@@ -31,6 +30,28 @@ function goshnarsMaliceReflection.onHealthChange(creature, attacker, primaryDama
 end
 
 goshnarsMaliceReflection:register()
+
+local cloakOfTerrorHealthLoss = CreatureEvent("CloakOfTerrorHealthLoss")
+
+function cloakOfTerrorHealthLoss.onHealthChange(creature, attacker, primaryDamage, primaryType, secondaryDamage, secondaryType, origin)
+	if not creature or not attacker then
+		return primaryDamage, primaryType, secondaryDamage, secondaryType
+	end
+
+	if attacker:getPlayer() and primaryDamage > 0 or secondaryDamage > 0 then
+		local position = creature:getPosition()
+		local tile = Tile(position)
+		if tile then
+			if not tile:getItemById(SoulWarQuest.theBloodOfCloakTerrorIds[1]) then
+				Game.createItem(SoulWarQuest.theBloodOfCloakTerrorIds[1], 1, position)
+			end
+		end
+	end
+
+	return primaryDamage, primaryType, secondaryDamage, secondaryType
+end
+
+cloakOfTerrorHealthLoss:register()
 
 local fourthTaintBossesDeath = CreatureEvent("FourthTaintBossesPrepareDeath")
 
@@ -67,6 +88,7 @@ function bossesDeath.onDeath(creature, corpse, killer, mostDamageKiller, lastHit
 			local soulWarQuest = killerPlayer:soulWarQuestKV()
 			-- Checks if the boss has already been defeated
 			if not soulWarQuest:get(bossName) then
+				soulWarQuest:scoped(bossName):set("killed", 1)
 				local firstTaintTime = soulWarQuest:get("firstTaintTime")
 				if not firstTaintTime then
 					local currentTime = os.time()

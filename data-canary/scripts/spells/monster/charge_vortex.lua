@@ -1,15 +1,15 @@
 local positions = {
-	Position(32264, 31253, 14),
-	Position(32269, 31258, 14),
-	Position(32275, 31255, 14),
-	Position(32280, 31253, 14),
-	Position(32271, 31248, 14),
-	Position(32264, 31245, 14),
-	Position(32270, 31240, 14),
-	Position(32269, 31253, 14),
-	Position(32275, 31245, 14),
-	Position(32276, 31250, 14),
-	Position(32266, 31249, 14),
+	Position(1028, 913, 15),
+	Position(1034, 917, 15),
+	Position(1029, 924, 15),
+	Position(1028, 920, 15),
+	Position(1025, 914, 15),
+	Position(1038, 920, 15),
+	Position(1037, 915, 15),
+	Position(1028, 924, 15),
+	Position(1032, 920, 15),
+	Position(1036, 921, 15),
+	Position(1025, 919, 15),
 }
 
 local function createVortex()
