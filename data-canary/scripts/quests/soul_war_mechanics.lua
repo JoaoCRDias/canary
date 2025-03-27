@@ -1,7 +1,6 @@
 local login = CreatureEvent("SoulWarLogin")
 
 function login.onLogin(player)
-	player:registerEvent("GoshnarsHatredBuff")
 	player:resetTaints()
 	return true
 end

@@ -27,7 +27,6 @@ monster.strategiesTarget = {
 }
 
 monster.events = {
-	"GoshnarsHatredBuff",
 }
 
 monster.flags = {

@@ -20,7 +20,7 @@ end
 
 combat:setCallback(CALLBACK_PARAM_TARGETCREATURE, "onTargetCreature")
 
-local storage = Storage.Quest.U12_20.GraveDanger.CobraBastion.Questline
+local storage = Storage.Quest.U12_20.GraveDanger.Cobra
 local rooms = {
 	[1] = { fromPos = Position(1468, 1222, 15), toPos = Position(1472, 1226, 15) },
 	[2] = { fromPos = Position(1472, 1222, 15), toPos = Position(1476, 1226, 15) },

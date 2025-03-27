@@ -80739,10 +80739,6 @@ Granted by TibiaGoals.com" />
 		<attribute key="duration" value="5" />
 		<attribute key="decayTo" value="0" />
 	</item>
-	<item id="62513" article="a" name="teleport">
-		<attribute key="primarytype" value="teleporters" />
-		<attribute key="type" value="teleport" />
-	</item>
 	<item id="62512" article="a" name="wheel sign" />
 	<item id="62511" article="a" name="radiant horseshoe">
 		<attribute key="weight" value="1000" />
@@ -81136,4 +81132,10 @@ Granted by TibiaGoals.com" />
 		<attribute key="weight" value="1000" />
 	</item>
 	<item id="59163" article="a" name="blesser statue" />
+	<item id="62513" article="a" name="magic forcefield">
+		<attribute key="primarytype" value="teleporters" />
+		<attribute key="type" value="teleport" />
+		<attribute key="description" value="You can see the other side through it." />
+		<attribute key="effect" value="teleport" />
+	</item>
 </items>

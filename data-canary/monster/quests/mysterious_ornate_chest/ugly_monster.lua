@@ -21,8 +21,6 @@ monster.speed = 340
 monster.manaCost = 0
 
 monster.events = {
-	"UglyMonsterDeath",
-	"UglyMonsterDrop",
 }
 
 monster.changeTarget = {

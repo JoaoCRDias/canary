@@ -27,7 +27,6 @@ monster.manaCost = 0
 
 monster.events = {
 	"dreamCourtsDeath",
-	"izcandarThink",
 }
 
 monster.changeTarget = {

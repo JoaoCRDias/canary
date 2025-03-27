@@ -20,7 +20,6 @@ monster.speed = 0
 monster.manaCost = 0
 
 monster.events = {
-	"TentuglysHeadDeath",
 }
 
 monster.changeTarget = {

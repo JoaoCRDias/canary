@@ -22,7 +22,6 @@ monster.manaCost = 0
 
 monster.events = {
 	"sir_nictros_health",
-	"brothers_summon",
 }
 
 monster.changeTarget = {

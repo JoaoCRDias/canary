@@ -14,8 +14,6 @@ monster.outfit = {
 }
 
 monster.events = {
-	"DepthWarzoneBossDeath",
-	"TheBaronFromBelowThink",
 }
 
 monster.health = 350000

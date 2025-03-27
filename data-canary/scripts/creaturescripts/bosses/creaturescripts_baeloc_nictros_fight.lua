@@ -1,50 +1,11 @@
 local config = {
-	centerRoom = Position(1780, 847, 15),
-	newPosition = Position(1781, 839, 15),
-	exitPos = Position(1781, 818, 15),
-	x = 12,
-	y = 12,
-	baelocPos = Position(1778, 836, 15),
 	nictrosPos = Position(1783, 836, 15),
-	timer = Storage.Quest.U12_20.GraveDanger.Bosses.BaelocNictros.Timer,
-	room = Storage.Quest.U12_20.GraveDanger.Bosses.BaelocNictros.Room,
-	fromPos = Position(1774, 842, 15),
-	toPos = Position(1786, 855, 15),
 }
-
-local brothers_summon = CreatureEvent("brothers_summon")
-
-function brothers_summon.onHealthChange(creature, attacker, primaryDamage, primaryType, secondaryDamage, secondaryType)
-	local chance = math.random(1, 100)
-	local position = Position(math.random(config.fromPos.x, config.toPos.x), math.random(config.fromPos.y, config.toPos.y), config.fromPos.z)
-	local tile = Tile(position)
-
-	if chance >= 90 then
-		if tile:isWalkable(false, false, false, true, false) then
-			local summon = creature:getName():lower() == "sir nictros" and "Squire Of Nictros" or "Retainer Of Baeloc"
-			Game.createMonster(summon, position, false, true)
-		end
-	end
-
-	return primaryDamage, primaryType, -secondaryDamage, secondaryType
-end
-
-brothers_summon:register()
 
 local sir_nictros_health = CreatureEvent("sir_nictros_health")
 
 function sir_nictros_health.onHealthChange(creature, attacker, primaryDamage, primaryType, secondaryDamage, secondaryType)
-	local players = Game.getSpectators(config.centerRoom, false, true, config.x, config.x, config.y, config.y)
-	for _, player in pairs(players) do
-		if player:isPlayer() then
-			if player:getStorageValue(config.timer) < os.time() then
-				player:setStorageValue(config.timer, os.time() + 20 * 3600)
-			end
-			if player:getStorageValue(config.room) < os.time() then
-				player:setStorageValue(config.room, os.time() + 30 * 60)
-			end
-		end
-	end
+
 
 	if primaryType == COMBAT_HEALING then
 		return primaryDamage, primaryType, -secondaryDamage, secondaryType
@@ -71,7 +32,7 @@ function sir_nictros_health.onHealthChange(creature, attacker, primaryDamage, pr
 		creature:setMoveLocked(true)
 		local baeloc = Creature("Sir Baeloc")
 		if baeloc then
-			baeloc:teleportTo(Position(33424, 31436, 13))
+			baeloc:teleportTo(Position(1780, 839, 15))
 			baeloc:setMoveLocked(false)
 		end
 	end

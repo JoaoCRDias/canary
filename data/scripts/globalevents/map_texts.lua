@@ -3,10 +3,14 @@ local mapTexts = GlobalEvent("MapTexts")
 
 local effects = {
 	{position = Position(1000, 1000, 7), text = 'Bem vindo ao Turbo Baiak!', effect = CONST_ME_TUTORIALSQUARE},
-	{position = Position(1009, 993, 7), text = 'Roulette', effect = CONST_ME_TUTORIALSQUARE},
-	{position = Position(1020, 991, 8), text = 'Easy', effect = CONST_ME_TUTORIALSQUARE},
-	{position = Position(1023, 991, 8), text = 'Medium', effect = CONST_ME_TUTORIALSQUARE},
-	{position = Position(1026, 991, 8), text = 'Hard', effect = CONST_ME_TUTORIALSQUARE},
+	{position = Position(1020, 991, 8), text = 'Easy'},
+	{position = Position(1022, 991, 8), text = 'Medium'},
+	{position = Position(1024, 991, 8), text = 'Hard'},
+	{position = Position(1026, 991, 8), text = 'Epic'},
+	{position = Position(1007, 1003, 7), text = 'Clean BP'},
+	{position = Position(1007, 999, 7), text = 'Free Bless'},
+	{position = Position(1023, 996, 8), text = 'Tasks', effect = 264},
+	{position = Position(997, 1002, 6), text = 'Castle', effect = 18},
 
 }
 

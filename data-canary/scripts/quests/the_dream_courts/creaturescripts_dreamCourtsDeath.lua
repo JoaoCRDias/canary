@@ -1,33 +1,27 @@
 local questlog = {
 	[1] = {
 		bossName = "Maxxenius",
-		storageTimer = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.MaxxeniusTimer,
-		storageKilled = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.MaxxeniusKilled,
+		storageKilled = Storage.Quest.U12_00.TheDreamCourts.MaxxeniusKilled,
 	},
 	[2] = {
 		bossName = "Alptramun",
-		storageTimer = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.AlptramunTimer,
-		storageKilled = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.AlptramunKilled,
+		storageKilled = Storage.Quest.U12_00.TheDreamCourts.AlptramunKilled,
 	},
 	[3] = {
 		bossName = "Izcandar the Banished",
-		storageTimer = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.IzcandarTimer,
-		storageKilled = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.IzcandarKilled,
+		storageKilled = Storage.Quest.U12_00.TheDreamCourts.IzcandarKilled,
 	},
 	[4] = {
 		bossName = "Plagueroot",
-		storageTimer = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.PlagueRootTimer,
-		storageKilled = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.PlagueRootKilled,
+		storageKilled = Storage.Quest.U12_00.TheDreamCourts.PlagueRootKilled,
 	},
 	[5] = {
 		bossName = "Malofur Mangrinder",
-		storageTimer = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.MalofurTimer,
-		storageKilled = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.MalofurKilled,
+		storageKilled = Storage.Quest.U12_00.TheDreamCourts.MalofurKilled,
 	},
 	[6] = {
 		bossName = "The Nightmare Beast",
-		storageTimer = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.NightmareTimer,
-		storageKilled = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.NightmareKilled,
+		storageKilled = Storage.Quest.U12_00.TheDreamCourts.NightmareKilled,
 	},
 }
 
@@ -46,7 +40,6 @@ function creaturescripts_dreamCourtsDeath.onDeath(creature, corpse, killer, most
 				local attackerPlayer = Player(pid)
 
 				if attackerPlayer then
-					attackerPlayer:setStorageValue(k.storageTimer, os.time() + 20 * 60 * 60)
 					attackerPlayer:setStorageValue(k.storageKilled, 1)
 				end
 			end

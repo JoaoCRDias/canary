@@ -5996,6 +5996,18 @@
 		<monster name="Guzzlemaw" x="3" y="2" z="7" spawntime="60" />
 		<monster name="Guzzlemaw" x="1" y="3" z="7" spawntime="60" />
 	</monster>
+	<monster centerx="997" centery="993" centerz="7" radius="1">
+		<monster name="Trainers" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</monster>
+	<monster centerx="1000" centery="993" centerz="7" radius="1">
+		<monster name="Hunts" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</monster>
+	<monster centerx="1003" centery="993" centerz="7" radius="1">
+		<monster name="Bosses" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</monster>
+	<monster centerx="1006" centery="993" centerz="7" radius="1">
+		<monster name="Quests" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</monster>
 	<monster centerx="1036" centery="993" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" />
 	</monster>
@@ -8982,14 +8994,12 @@
 	</monster>
 	<monster centerx="887" centery="1410" centerz="7" radius="1">
 		<monster name="Grand Commander Soeren" x="0" y="0" z="7" spawntime="60" direction="3" />
-		<monster name="A Carved Stone Tile" x="0" y="1" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="867" centery="1412" centerz="7" radius="1">
 		<monster name="Brokul" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</monster>
 	<monster centerx="887" centery="1412" centerz="7" radius="1">
 		<monster name="Grand Chaplain Gaunder" x="0" y="0" z="7" spawntime="60" direction="3" />
-		<monster name="A Carved Stone Tile" x="1" y="0" z="7" spawntime="60" />
 	</monster>
 	<monster centerx="788" centery="1413" centerz="7" radius="1">
 		<monster name="Vemiath" x="0" y="0" z="7" spawntime="60" direction="1" />
@@ -9013,12 +9023,10 @@
 		<monster name="Ragiaz" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</monster>
 	<monster centerx="864" centery="1413" centerz="7" radius="1">
-		<monster name="Tarbaz" x="0" y="0" z="7" spawntime="60" direction="3" weight="25" />
-		<monster name="A Carved Stone Tile" x="0" y="0" z="7" spawntime="60" weight="25" />
+		<monster name="Tarbaz" x="0" y="0" z="7" spawntime="60" direction="3" />
 	</monster>
 	<monster centerx="867" centery="1414" centerz="7" radius="1">
-		<monster name="Tanjis" x="0" y="0" z="7" spawntime="60" direction="1" weight="25" />
-		<monster name="A Carved Stone Tile" x="0" y="0" z="7" spawntime="60" weight="25" />
+		<monster name="Tanjis" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</monster>
 	<monster centerx="887" centery="1414" centerz="7" radius="1">
 		<monster name="Grand Canon Dominus" x="0" y="0" z="7" spawntime="60" direction="3" />
@@ -9027,8 +9035,7 @@
 		<monster name="Obujos" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</monster>
 	<monster centerx="887" centery="1416" centerz="7" radius="1">
-		<monster name="Timira The Many-Headed" x="0" y="0" z="7" spawntime="60" direction="3" weight="25" />
-		<monster name="A Carved Stone Tile" x="0" y="0" z="7" spawntime="60" weight="25" />
+		<monster name="Timira The Many-Headed" x="0" y="0" z="7" spawntime="60" direction="3" />
 	</monster>
 	<monster centerx="788" centery="1417" centerz="7" radius="1">
 		<monster name="Chagorz" x="0" y="0" z="7" spawntime="60" direction="1" />
@@ -35415,30 +35422,18 @@
 		<monster name="Hulking Prehemoth" x="-2" y="5" z="14" spawntime="60" />
 		<monster name="Gore Horn" x="2" y="5" z="14" spawntime="60" />
 	</monster>
-	<monster centerx="1292" centery="1031" centerz="15" radius="1" />
-	<monster centerx="1298" centery="1031" centerz="15" radius="1" />
-	<monster centerx="1131" centery="1032" centerz="15" radius="1" />
 	<monster centerx="1029" centery="1034" centerz="15" radius="3">
 		<monster name="Neutral Deepling Warrior" x="1" y="3" z="15" spawntime="60" />
 	</monster>
 	<monster centerx="1043" centery="1034" centerz="15" radius="3">
 		<monster name="Neutral Deepling Warrior" x="-2" y="1" z="15" spawntime="60" />
 	</monster>
-	<monster centerx="1215" centery="1034" centerz="15" radius="1" />
-	<monster centerx="1224" centery="1034" centerz="15" radius="1" />
-	<monster centerx="1329" centery="1034" centerz="15" radius="1" />
-	<monster centerx="1336" centery="1034" centerz="15" radius="1" />
 	<monster centerx="1466" centery="1034" centerz="15" radius="1">
 		<monster name="Animated Sword" x="0" y="0" z="15" spawntime="60" />
 	</monster>
 	<monster centerx="1474" centery="1034" centerz="15" radius="1">
 		<monster name="Animated Sword" x="0" y="0" z="15" spawntime="60" />
 	</monster>
-	<monster centerx="1179" centery="1035" centerz="15" radius="1" />
-	<monster centerx="1292" centery="1038" centerz="15" radius="1" />
-	<monster centerx="1298" centery="1038" centerz="15" radius="1" />
-	<monster centerx="1329" centery="1040" centerz="15" radius="1" />
-	<monster centerx="1336" centery="1040" centerz="15" radius="1" />
 	<monster centerx="1029" centery="1041" centerz="15" radius="3">
 		<monster name="Neutral Deepling Warrior" x="3" y="-3" z="15" spawntime="60" />
 	</monster>
@@ -35448,7 +35443,6 @@
 	<monster centerx="1474" centery="1041" centerz="15" radius="1">
 		<monster name="Animated Sword" x="0" y="0" z="15" spawntime="60" />
 	</monster>
-	<monster centerx="1091" centery="1044" centerz="15" radius="1" />
 	<monster centerx="1355" centery="1121" centerz="15" radius="7">
 		<monster name="Guilt" x="-4" y="-2" z="15" spawntime="90" />
 		<monster name="Guilt" x="4" y="-2" z="15" spawntime="90" />
@@ -35476,7 +35470,4 @@
 		<monster name="Electric Sparks" x="3" y="2" z="15" spawntime="10" />
 		<monster name="Electric Sparks" x="-5" y="3" z="15" spawntime="10" />
 	</monster>
-	<monster centerx="1571" centery="1273" centerz="15" radius="3" />
-	<monster centerx="1564" centery="1280" centerz="15" radius="3" />
-	<monster centerx="1573" centery="1280" centerz="15" radius="3" />
 </monsters>

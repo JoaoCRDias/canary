@@ -76,6 +76,7 @@ Reserved player action storage key ranges (const.h)
 ]]
 
 Storage = {
+	LastBlessPicked = 31000,
 	-- General storages
 	Dragonfetish = 30003,
 	EdronRopeQuest = 30004,

@@ -21,8 +21,6 @@ monster.speed = 125
 monster.manaCost = 0
 
 monster.events = {
-	"dreamCourtsDeath",
-	"facelessThink",
 }
 
 monster.changeTarget = {

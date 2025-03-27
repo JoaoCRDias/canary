@@ -13,7 +13,7 @@ local config = {
 		name = "Scarlett Etzel",
 		createFunction = function()
 			local scarlett = Game.createMonster("Scarlett Etzel", Position(1474, 1221, 15), true, true)
-			scarlett:setStorageValue(Storage.Quest.U12_20.GraveDanger.CobraBastion.Questline, 1)
+			scarlett:setStorageValue(Storage.Quest.U12_20.GraveDanger.Cobra, 1)
 			return scarlett
 		end,
 	},

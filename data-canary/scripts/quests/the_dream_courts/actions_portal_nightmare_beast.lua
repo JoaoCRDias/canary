@@ -1,9 +1,9 @@
 local storagesTable = {
-	{ storage = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.AlptramunKilled, bossName = "Alptramun" },
-	{ storage = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.IzcandarKilled, bossName = "Izcandar the Banished" },
-	{ storage = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.PlagueRootKilled, bossName = "Plagueroot" },
-	{ storage = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.MalofurKilled, bossName = "Malofur Mangrinder" },
-	{ storage = Storage.Quest.U12_00.TheDreamCourts.DreamScarGlobal.MaxxeniusKilled	, bossName = "Maxxenius" },
+	{ storage = Storage.Quest.U12_00.TheDreamCourts.AlptramunKilled, bossName = "Alptramun" },
+	{ storage = Storage.Quest.U12_00.TheDreamCourts.IzcandarKilled, bossName = "Izcandar the Banished" },
+	{ storage = Storage.Quest.U12_00.TheDreamCourts.PlagueRootKilled, bossName = "Plagueroot" },
+	{ storage = Storage.Quest.U12_00.TheDreamCourts.MalofurKilled, bossName = "Malofur Mangrinder" },
+	{ storage = Storage.Quest.U12_00.TheDreamCourts.MaxxeniusKilled	, bossName = "Maxxenius" },
 }
 
 local portalPaleWorm = MoveEvent()
