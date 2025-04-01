@@ -6234,7 +6234,7 @@ GameStore.Categories = {
 			{
 				icons = { "Prey_Bonus_Reroll.png" },
 				name = "Prey Wildcard",
-				price = 50,
+				price = 5,
 				id = GameStore.SubActions.PREY_WILDCARD,
 				count = 5,
 				description = "<i>Use Prey Wildcards to reroll the bonus of an active prey, to lock your active prey or to select a prey of your choice.</i>\n\n{character}\n{info} added directly to Prey dialog\n{info} maximum amount that can be owned by character: 50",
@@ -6275,8 +6275,8 @@ GameStore.Categories = {
 			{
 				icons = { "Prey_Bonus_Reroll.png" },
 				name = "Prey Wildcard",
-				price = 300,
-				count = 40,
+				price = 25,
+				count = 25,
 				description = "<i>Use Prey Wildcards to reroll the bonus of an active prey, to lock your active prey or to select a prey of your choice.</i>\n\n{character}\n{info} added directly to Prey dialog",
 				type = GameStore.OfferTypes.OFFER_TYPE_PREYBONUS,
 			},

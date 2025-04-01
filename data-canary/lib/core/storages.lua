@@ -310,13 +310,6 @@ Storage = {
 			Questline = 52311,
 		},
 	},
-	TheMummysCurse = {
-		-- Reserved storage from 52350 - 52359
-		Time1 = 52351,
-		Time2 = 52352,
-		Time3 = 52353,
-		Time4 = 52354,
-	},
 	TheOrderOfTheLion = {
 		-- Reserved storage 52360-52395 (TheRookieGuard)
 		-- Reserved storage 52396-52410 (TheOrderOfTheLion)
@@ -1233,7 +1226,7 @@ Storage = {
 				DoorToQuara = 41989,
 				DoorToReward = 41990,
 				LastFight = 41991,
-				WarGolemsMachine1 = 41992,
+				Reward = 41992,
 				WarGolemsMachine2 = 41993,
 				SearoutesAroundYalahar = {
 					TownsCounter = 41994,

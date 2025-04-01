@@ -146,7 +146,7 @@ local creatureFunctions = {
 			return creature:setDirection(target)
 		end,
 	},
-	["maxHealth"] = {
+	["maxhealth"] = {
 		isActive = true,
 		targetFunction = function(creature, target)
 			return creature:setMaxHealth(target)

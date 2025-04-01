@@ -23339,7 +23339,7 @@
 	<item id="8777" article="a" name="Rerun's ring">
 		<attribute key="weight" value="90" />
 	</item>
-	<item id="8778" article="a" name="jester doll">
+	<item id="8778" article="a" name="addon doll">
 		<attribute key="primarytype" value="dolls and bears" />
 		<attribute key="weight" value="1200" />
 	</item>
@@ -43307,10 +43307,8 @@ My sad story is told by few living humans but many dead warriors" />
 		<attribute key="primarytype" value="fluid containers" />
 	</item>
 	<item id="21946" article="a" name="remains of amphora" />
-	<item fromid="21947" toid="21948" article="a" name="midnight panther doll">
+	<item fromid="21947" toid="21948" article="a" name="mount doll">
 		<attribute key="primarytype" value="dolls and bears" />
-		<attribute key="description" value="It is said to be a symbol of perseverance and luck.
-Awarded by TibiaMagazine.com.ve" />
 		<attribute key="weight" value="1700" />
 	</item>
 	<item id="21949" name="RESERVED SPRITE" />
@@ -81137,5 +81135,8 @@ Granted by TibiaGoals.com" />
 		<attribute key="type" value="teleport" />
 		<attribute key="description" value="You can see the other side through it." />
 		<attribute key="effect" value="teleport" />
+	</item>
+	<item id="62678" article="a" name="tier upgrader">
+		<attribute key="weight" value="1000" />
 	</item>
 </items>

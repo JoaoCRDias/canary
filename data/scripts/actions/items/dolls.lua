@@ -81,12 +81,6 @@ local dollsTable = {
 		"I can say 469 and more...",
 		"My dark magic lies on the world",
 	},
-	[21947] = {
-		"Hail!",
-		"Don't be afraid of the darkness!",
-		"Feel lucky, |PLAYERNAME|!",
-		"Purrrrrrr!",
-	},
 	[21962] = {
 		"Hail! (União&Força)",
 		"Hail |PLAYERNAME|! (União&Força)",

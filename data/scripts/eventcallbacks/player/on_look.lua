@@ -1,3 +1,5 @@
+local Constants = dofile(DATA_DIRECTORY .. '/scripts/magic_roulette/lib/core/constants.lua')
+
 local specialItemRanges = {
 	{ rangeStart = ITEM_HEALTH_CASK_START, rangeEnd = ITEM_HEALTH_CASK_END },
 	{ rangeStart = ITEM_MANA_CASK_START, rangeEnd = ITEM_MANA_CASK_END },
@@ -22,9 +24,9 @@ local function getPositionDescription(position)
 	end
 end
 
+
 local function handleItemDescription(inspectedThing, lookDistance)
 	local descriptionText = inspectedThing:getDescription(lookDistance)
-
 	if isSpecialItem(inspectedThing.itemid) then
 		local itemCharges = inspectedThing:getCharges()
 		if itemCharges > 0 then
@@ -112,8 +114,14 @@ local callback = EventCallback("PlayerOnLookBaseEvent")
 
 function callback.playerOnLook(player, inspectedThing, inspectedPosition, lookDistance)
 	local descriptionText
+	if inspectedThing:getName():lower() == Constants.ROULETTE_DUMMY_NAME then
+		local item = ItemType(inspectedThing:getOutfit().lookTypeEx)
 
-	if inspectedThing:isItem() then
+		descriptionText = ('You see %s.\n%s'):format(
+			item:getName(),
+			item:getDescription()
+		)
+	elseif inspectedThing:isItem() then
 		descriptionText = handleItemDescription(inspectedThing, lookDistance)
 	elseif inspectedThing:isCreature() then
 		descriptionText = handleCreatureDescription(inspectedThing, lookDistance)
