@@ -93,5 +93,138 @@ ChestUnique = {
 		reward = { { 25700, 1 } },
 		storage = Storage.Quest.U7_24.TheAnnihilator.Reward,
 	},
+	--POI
+	[6037] = {
+		itemId = 2481,
+		itemPos = Position(958, 1178, 10),
+		reward = { { 3253, 1 } },
+		storage = Storage.Quest.U7_9.ThePitsOfInferno.RewardChestBP,
+	},
+	[6038] = {
+		itemId = 2481,
+		itemPos = Position(958, 1179, 10),
+		reward = { { 6529, 1 } },
+		storage = Storage.Quest.U7_9.ThePitsOfInferno.RewardChestSoftBoots,
+	},
+	--Canivetes
+	[6039] = {
+		itemId = 2472,
+		itemPos = Position(707, 1225, 8),
+		reward = { { 9598, 1 } },
+		storage = Storage.Canivetes,
+	},
+	[6040] = {
+		itemId = 2472,
+		itemPos = Position(708, 1225, 8),
+		reward = { { 9596, 1 } },
+		storage = Storage.Canivetes,
+	},
+	[6041] = {
+		itemId = 2472,
+		itemPos = Position(709, 1225, 8),
+		reward = { { 9594, 1 } },
+		storage = Storage.Canivetes,
+	},
+	--Custom Inq
+	[6042] = {
+		itemId = 2472,
+		itemPos = Position(238, 1558, 12),
+		reward = { { 25779, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	[6043] = {
+		itemId = 2472,
+		itemPos = Position(240, 1558, 12),
+		reward = { { 8090, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	[6044] = {
+		itemId = 2472,
+		itemPos = Position(242, 1558, 12),
+		reward = { { 8060, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	[6045] = {
+		itemId = 2472,
+		itemPos = Position(244, 1558, 12),
+		reward = { { 8062, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	[6046] = {
+		itemId = 2472,
+		itemPos = Position(246, 1558, 12),
+		reward = { { 8054, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	[6047] = {
+		itemId = 2472,
+		itemPos = Position(248, 1558, 12),
+		reward = { { 8053, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	[6048] = {
+		itemId = 2472,
+		itemPos = Position(250, 1558, 12),
+		reward = { { 8055, 1 } },
+		storage = Storage.CustomInqui,
+	},
+	--Custom Wote
+	[6049] = {
+		itemId = 2472,
+		itemPos = Position(755, 1496, 11),
+		reward = { { 11687, 1 } },
+		storage = Storage.CustomWote,
+	},
+	[6050] = {
+		itemId = 2472,
+		itemPos = Position(757, 1496, 11),
+		reward = { { 11686, 1 } },
+		storage = Storage.CustomWote,
+	},
+	[6051] = {
+		itemId = 2472,
+		itemPos = Position(759, 1496, 11),
+		reward = { { 11689, 1 } },
+		storage = Storage.CustomWote,
+	},
+	-- Destruction quest
+	[6052] = {
+		itemId = 2472,
+		itemPos = Position(268, 1358, 8),
+		reward = { { 27458, 1 } },
+		storage = Storage.DestructionQuest,
+	},
+	[6053] = {
+		itemId = 2472,
+		itemPos = Position(269, 1358, 8),
+		reward = { { 27457, 1 } },
+		storage = Storage.DestructionQuest,
+	},
+	[6054] = {
+		itemId = 2472,
+		itemPos = Position(270, 1358, 8),
+		reward = { { 27449, 1 }, { 27450, 1 } },
+		storage = Storage.DestructionQuest,
+	},
+	[6055] = {
+		itemId = 2472,
+		itemPos = Position(271, 1358, 8),
+		reward = { { 27453, 1 }, { 27454, 1 } },
+		storage = Storage.DestructionQuest,
+	},
+	[6056] = {
+		itemId = 2472,
+		itemPos = Position(272, 1358, 8),
+		reward = { { 27451, 1 }, { 27452, 1 } },
+		storage = Storage.DestructionQuest,
+	},
+	[6057] = {
+		itemId = 2472,
+		itemPos = Position(273, 1358, 8),
+		reward = { { 27455, 1 }, { 27456, 1 } },
+		storage = Storage.DestructionQuest,
+	},
+
+
 
 }

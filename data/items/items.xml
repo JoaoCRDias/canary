@@ -81139,4 +81139,7 @@ Granted by TibiaGoals.com" />
 	<item id="62678" article="a" name="tier upgrader">
 		<attribute key="weight" value="1000" />
 	</item>
+	<item id="40729" article="a" name="stairs">
+		<attribute key="floorchange" value="east" />
+	</item>
 </items>

@@ -77,6 +77,10 @@ Reserved player action storage key ranges (const.h)
 
 Storage = {
 	LastBlessPicked = 31000,
+	Canivetes = 31001,
+	CustomInqui = 31002,
+	CustomWoter = 31003,
+	DestructionQuest = 31004,
 	-- General storages
 	Dragonfetish = 30003,
 	EdronRopeQuest = 30004,
