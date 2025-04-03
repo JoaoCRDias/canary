@@ -56,7 +56,7 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "127.0.0.1"
+ip = "45.40.99.207"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
@@ -396,12 +396,12 @@ maxMarketOffersAtATimePerPlayer = 100
 
 -- MySQL
 mysqlHost = "127.0.0.1"
-mysqlUser = "root"
-mysqlPass = "13john13"
-mysqlDatabase = "kingsman"
-mysqlDatabaseBackup = false
+mysqlUser = "kolisium"
+mysqlPass = "KydKMO6coa5q0R"
+mysqlDatabase = "baiak_turbo"
+mysqlDatabaseBackup = true
 mysqlPort = 3306
-mysqlSock = ""
+mysqlSock = "/var/run/mysqld/mysqld.sock"
 passwordType = "sha1"
 
 -- NOTE: memoryConst: This is the memory cost for the Argon2 hash algorithm. It specifies the amount of memory that the algorithm will use when calculating a hash.
